@@ -107,6 +107,110 @@
         grid-auto-columns: 80px;
       }
     }
+
+    /* Network Graph */
+    #network-container {
+      width: 100%;
+      height: 500px;
+      background: var(--gray-100);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #network-container svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .network-node {
+      cursor: pointer;
+    }
+
+    .network-node circle {
+      stroke: var(--bg);
+      stroke-width: 1.5px;
+      transition: stroke-width 0.2s;
+    }
+
+    .network-node:hover circle {
+      stroke-width: 3px;
+    }
+
+    .network-node text {
+      font-size: 0.6rem;
+      fill: var(--text);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .network-node:hover text,
+    .network-node.highlighted text {
+      opacity: 1;
+    }
+
+    .network-link {
+      stroke: var(--gray-400);
+      stroke-opacity: 0.6;
+      fill: none;
+    }
+
+    .network-link.highlighted {
+      stroke: var(--text);
+      stroke-opacity: 1;
+    }
+
+    .network-controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .network-controls label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .network-controls select,
+    .network-controls input[type="range"] {
+      font-family: inherit;
+      font-size: 0.8rem;
+    }
+
+    .network-controls select {
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .network-tooltip {
+      position: absolute;
+      background: var(--text);
+      color: var(--bg);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+      z-index: 10;
+      max-width: 200px;
+    }
+
+    .network-tooltip.visible {
+      opacity: 1;
+    }
+
+    .network-tooltip .tooltip-title {
+      font-weight: 700;
+    }
+
+    .network-tooltip .tooltip-detail {
+      font-size: 0.65rem;
+      opacity: 0.8;
+      margin-top: 2px;
+    }
   </style>
 </head>
 <body>
@@ -150,12 +254,46 @@
     </div>
   </div>
 
+  <div class="section">
+    <div class="section-header">Red de Colaboraciones</div>
+    <div class="section-content">
+      <div class="section-note">
+        Artistas conectados por tracks en los que colaboraron. Tamaño = tiempo escuchado. Grosor de línea = tiempo de colaboración.
+      </div>
+      <div class="network-controls">
+        <label>
+          Mínimo de colaboraciones:
+          <select id="network-min-collabs">
+            <option value="1">1+</option>
+            <option value="2" selected>2+</option>
+            <option value="3">3+</option>
+            <option value="5">5+</option>
+          </select>
+        </label>
+        <label>
+          Mostrar top:
+          <select id="network-top-artists">
+            <option value="30">30 artistas</option>
+            <option value="50" selected>50 artistas</option>
+            <option value="75">75 artistas</option>
+            <option value="100">100 artistas</option>
+          </select>
+        </label>
+        <span class="gallery-stats" id="network-stats"></span>
+      </div>
+      <div id="network-container">
+        <div class="network-tooltip" id="network-tooltip"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="methodology">
     <h3>Notas</h3>
     <ul>
       <li>Carátulas obtenidas de la API de Spotify</li>
       <li>Tiempo = suma de milisegundos escuchados de todos los tracks del álbum</li>
       <li>Click en un álbum para abrirlo en Spotify</li>
+      <li>Red de colaboraciones: muestra artistas que aparecen juntos en tracks</li>
     </ul>
   </div>
 
@@ -222,14 +360,235 @@
       }).join('');
     }
 
+    // Build collaboration network data
+    function buildNetworkData(tracks, artists, minCollabs = 2, topArtists = 50) {
+      // Create artist lookup with listening stats
+      const artistMap = new Map();
+      artists.forEach(a => {
+        artistMap.set(a.name, {
+          id: a.id,
+          name: a.name,
+          ms_played: a.ms_played || 0,
+          popularity: a.popularity || 0,
+          genres: a.genres || []
+        });
+      });
+
+      // Find collaborations
+      const edges = new Map();
+      tracks.forEach(track => {
+        const trackArtists = track.artist_names || [];
+        if (trackArtists.length > 1) {
+          // Create edges between all pairs
+          for (let i = 0; i < trackArtists.length; i++) {
+            for (let j = i + 1; j < trackArtists.length; j++) {
+              const a1 = trackArtists[i];
+              const a2 = trackArtists[j];
+              const key = [a1, a2].sort().join('|||');
+
+              if (!edges.has(key)) {
+                edges.set(key, { source: a1, target: a2, weight: 0, tracks: [] });
+              }
+              edges.get(key).weight += track.ms_played || 0;
+              edges.get(key).tracks.push(track.name);
+            }
+          }
+        }
+      });
+
+      // Filter edges by minimum collaborations
+      const filteredEdges = Array.from(edges.values())
+        .filter(e => e.tracks.length >= minCollabs);
+
+      // Get artists involved in filtered edges
+      const involvedArtists = new Set();
+      filteredEdges.forEach(e => {
+        involvedArtists.add(e.source);
+        involvedArtists.add(e.target);
+      });
+
+      // Get top artists by listening time that are involved in collabs
+      const nodes = Array.from(involvedArtists)
+        .map(name => artistMap.get(name) || { name, ms_played: 0 })
+        .filter(a => a.ms_played > 0)
+        .sort((a, b) => b.ms_played - a.ms_played)
+        .slice(0, topArtists);
+
+      const nodeNames = new Set(nodes.map(n => n.name));
+
+      // Filter edges to only include nodes in our set
+      const finalEdges = filteredEdges.filter(e =>
+        nodeNames.has(e.source) && nodeNames.has(e.target)
+      );
+
+      return { nodes, edges: finalEdges };
+    }
+
+    // Render network graph
+    let simulation = null;
+
+    function renderNetworkGraph(tracks, artists, minCollabs = 2, topArtists = 50) {
+      const container = document.getElementById('network-container');
+      const stats = document.getElementById('network-stats');
+      const tooltip = document.getElementById('network-tooltip');
+
+      // Clear previous
+      container.querySelectorAll('svg').forEach(s => s.remove());
+      if (simulation) simulation.stop();
+
+      const { nodes, edges } = buildNetworkData(tracks, artists, minCollabs, topArtists);
+
+      stats.textContent = `${nodes.length} artistas · ${edges.length} colaboraciones`;
+
+      if (nodes.length === 0) {
+        container.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--text-muted);">No hay suficientes colaboraciones con estos filtros</div>';
+        return;
+      }
+
+      const width = container.clientWidth;
+      const height = container.clientHeight || 500;
+
+      // Create SVG
+      const svg = d3.select(container)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .attr('viewBox', [0, 0, width, height]);
+
+      // Scales
+      const maxMs = d3.max(nodes, d => d.ms_played);
+      const radiusScale = d3.scaleSqrt()
+        .domain([0, maxMs])
+        .range([4, 30]);
+
+      const maxEdgeWeight = d3.max(edges, d => d.weight);
+      const strokeScale = d3.scaleSqrt()
+        .domain([0, maxEdgeWeight])
+        .range([1, 8]);
+
+      // Create node map for edge references
+      const nodeMap = new Map(nodes.map(n => [n.name, n]));
+
+      // Prepare edges with node references
+      const links = edges.map(e => ({
+        ...e,
+        source: nodeMap.get(e.source),
+        target: nodeMap.get(e.target)
+      })).filter(e => e.source && e.target);
+
+      // Force simulation
+      simulation = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(d => d.name).distance(50).strength(1))
+        .force('charge', d3.forceManyBody().strength(-100))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('x', d3.forceX(width / 2).strength(0.1))
+        .force('y', d3.forceY(height / 2).strength(0.1))
+        .force('collision', d3.forceCollide().radius(d => radiusScale(d.ms_played) + 3));
+
+      // Draw links
+      const link = svg.append('g')
+        .selectAll('line')
+        .data(links)
+        .join('line')
+        .attr('class', 'network-link')
+        .attr('stroke-width', d => strokeScale(d.weight));
+
+      // Draw nodes
+      const node = svg.append('g')
+        .selectAll('g')
+        .data(nodes)
+        .join('g')
+        .attr('class', 'network-node')
+        .call(d3.drag()
+          .on('start', dragstarted)
+          .on('drag', dragged)
+          .on('end', dragended));
+
+      node.append('circle')
+        .attr('r', d => radiusScale(d.ms_played))
+        .attr('fill', d => d.genres?.length > 0 ? '#1a1a1a' : '#737373');
+
+      node.append('text')
+        .text(d => d.name)
+        .attr('dx', d => radiusScale(d.ms_played) + 4)
+        .attr('dy', '0.35em');
+
+      // Tooltip and highlighting
+      node.on('mouseenter', function(event, d) {
+        const hours = (d.ms_played / 3600000).toFixed(1);
+        const connectedEdges = links.filter(l => l.source.name === d.name || l.target.name === d.name);
+        const collabCount = connectedEdges.length;
+
+        tooltip.innerHTML = `
+          <div class="tooltip-title">${d.name}</div>
+          <div class="tooltip-detail">${hours}h escuchadas</div>
+          <div class="tooltip-detail">${collabCount} colaboraciones</div>
+          ${d.genres?.length > 0 ? `<div class="tooltip-detail">${d.genres.slice(0, 2).join(', ')}</div>` : ''}
+        `;
+        tooltip.classList.add('visible');
+
+        // Highlight connected
+        const connectedNames = new Set([d.name]);
+        connectedEdges.forEach(e => {
+          connectedNames.add(e.source.name);
+          connectedNames.add(e.target.name);
+        });
+
+        node.classed('highlighted', n => connectedNames.has(n.name));
+        link.classed('highlighted', l => l.source.name === d.name || l.target.name === d.name);
+      })
+      .on('mousemove', function(event) {
+        const rect = container.getBoundingClientRect();
+        tooltip.style.left = (event.clientX - rect.left + 10) + 'px';
+        tooltip.style.top = (event.clientY - rect.top - 10) + 'px';
+      })
+      .on('mouseleave', function() {
+        tooltip.classList.remove('visible');
+        node.classed('highlighted', false);
+        link.classed('highlighted', false);
+      });
+
+      // Simulation tick
+      simulation.on('tick', () => {
+        link
+          .attr('x1', d => d.source.x)
+          .attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x)
+          .attr('y2', d => d.target.y);
+
+        node.attr('transform', d => `translate(${d.x},${d.y})`);
+      });
+
+      // Drag functions
+      function dragstarted(event) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+      }
+
+      function dragged(event) {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+      }
+
+      function dragended(event) {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+      }
+    }
+
     async function init() {
       const data = await loadMetadata();
       albumsData = data.albums.filter(a => a.images?.length > 0 && a.ms_played > 0);
 
-      // Initial render
+      // Initial render - Album gallery
       renderAlbumGallery(albumsData, 'time', 100);
 
-      // Setup controls
+      // Initial render - Network graph
+      renderNetworkGraph(data.tracks, data.artists, 2, 50);
+
+      // Setup album gallery controls
       document.getElementById('sort-select').addEventListener('change', (e) => {
         const limit = document.getElementById('limit-select').value;
         renderAlbumGallery(albumsData, e.target.value, limit);
@@ -238,6 +597,17 @@
       document.getElementById('limit-select').addEventListener('change', (e) => {
         const sortBy = document.getElementById('sort-select').value;
         renderAlbumGallery(albumsData, sortBy, e.target.value);
+      });
+
+      // Setup network controls
+      document.getElementById('network-min-collabs').addEventListener('change', (e) => {
+        const topArtists = parseInt(document.getElementById('network-top-artists').value);
+        renderNetworkGraph(data.tracks, data.artists, parseInt(e.target.value), topArtists);
+      });
+
+      document.getElementById('network-top-artists').addEventListener('change', (e) => {
+        const minCollabs = parseInt(document.getElementById('network-min-collabs').value);
+        renderNetworkGraph(data.tracks, data.artists, minCollabs, parseInt(e.target.value));
       });
     }
 
