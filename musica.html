@@ -346,6 +346,26 @@
     </div>
   </div>
 
+  <div class="section">
+    <div class="section-header">Línea de Tiempo de Lanzamientos</div>
+    <div class="section-content">
+      <div class="section-note">
+        ¿Escucho música nueva o clásica? Distribución de álbumes por año de lanzamiento.
+      </div>
+      <div class="network-controls">
+        <label>
+          Mostrar por:
+          <select id="timeline-metric">
+            <option value="count">Cantidad de álbumes</option>
+            <option value="time">Tiempo escuchado</option>
+          </select>
+        </label>
+        <span class="gallery-stats" id="timeline-stats"></span>
+      </div>
+      <div id="timeline-container" style="width: 100%; height: 300px;"></div>
+    </div>
+  </div>
+
   <div class="methodology">
     <h3>Notas</h3>
     <ul>
@@ -354,6 +374,7 @@
       <li>Click en un álbum para abrirlo en Spotify</li>
       <li>Red de colaboraciones: muestra artistas que aparecen juntos en tracks</li>
       <li>Popularidad: métrica de Spotify (0-100) basada en reproducciones globales recientes</li>
+      <li>Release date: fecha de lanzamiento según metadata de Spotify</li>
     </ul>
   </div>
 
@@ -892,6 +913,184 @@
       document.getElementById('scatter-limit').addEventListener('change', (e) => {
         renderScatterplot(data.artists, parseInt(e.target.value));
       });
+
+      // Initial render - Timeline
+      renderTimeline(data.albums, 'count');
+
+      // Setup timeline controls
+      document.getElementById('timeline-metric').addEventListener('change', (e) => {
+        renderTimeline(data.albums, e.target.value);
+      });
+    }
+
+    // Render timeline histogram
+    function renderTimeline(albums, metric = 'count') {
+      const container = document.getElementById('timeline-container');
+      const stats = document.getElementById('timeline-stats');
+
+      // Clear previous
+      container.innerHTML = '';
+
+      // Group albums by year
+      const yearData = new Map();
+      albums.forEach(album => {
+        const releaseDate = album.release_date;
+        if (!releaseDate) return;
+        const year = parseInt(releaseDate.substring(0, 4));
+        if (isNaN(year) || year < 1950 || year > 2025) return;
+
+        if (!yearData.has(year)) {
+          yearData.set(year, { count: 0, ms_played: 0 });
+        }
+        yearData.get(year).count += 1;
+        yearData.get(year).ms_played += album.ms_played || 0;
+      });
+
+      // Convert to array and fill gaps
+      const years = Array.from(yearData.keys()).sort((a, b) => a - b);
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+
+      const data = [];
+      for (let y = minYear; y <= maxYear; y++) {
+        const d = yearData.get(y) || { count: 0, ms_played: 0 };
+        data.push({
+          year: y,
+          count: d.count,
+          hours: d.ms_played / 3600000
+        });
+      }
+
+      // Stats
+      const totalAlbums = albums.filter(a => a.release_date).length;
+      const avgYear = years.reduce((sum, y) => sum + y * (yearData.get(y)?.count || 0), 0) / totalAlbums;
+      const peakYear = data.reduce((max, d) => (metric === 'count' ? d.count : d.hours) > (metric === 'count' ? max.count : max.hours) ? d : max, data[0]);
+      stats.textContent = `${totalAlbums} álbumes · Promedio: ${avgYear.toFixed(0)} · Pico: ${peakYear.year}`;
+
+      // Dimensions
+      const margin = { top: 20, right: 20, bottom: 40, left: 50 };
+      const width = container.clientWidth - margin.left - margin.right;
+      const height = (container.clientHeight || 300) - margin.top - margin.bottom;
+
+      // Create SVG
+      const svg = d3.select(container)
+        .append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom);
+
+      const g = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      // Scales
+      const xScale = d3.scaleBand()
+        .domain(data.map(d => d.year))
+        .range([0, width])
+        .padding(0.1);
+
+      const yValue = d => metric === 'count' ? d.count : d.hours;
+      const maxY = d3.max(data, yValue);
+      const yScale = d3.scaleLinear()
+        .domain([0, maxY * 1.1])
+        .range([height, 0]);
+
+      // Find key decades for visual interest
+      const decades = [1970, 1980, 1990, 2000, 2010, 2020];
+      decades.forEach(decade => {
+        if (decade >= minYear && decade <= maxYear) {
+          g.append('line')
+            .attr('x1', xScale(decade))
+            .attr('y1', 0)
+            .attr('x2', xScale(decade))
+            .attr('y2', height)
+            .attr('stroke', '#f0f0f0')
+            .attr('stroke-width', 1);
+        }
+      });
+
+      // Bars
+      const bars = g.selectAll('.bar')
+        .data(data)
+        .join('rect')
+        .attr('class', 'bar')
+        .attr('x', d => xScale(d.year))
+        .attr('y', d => yScale(yValue(d)))
+        .attr('width', xScale.bandwidth())
+        .attr('height', d => height - yScale(yValue(d)))
+        .attr('fill', d => {
+          // Color by era
+          if (d.year >= 2020) return '#1a1a1a';
+          if (d.year >= 2010) return '#404040';
+          if (d.year >= 2000) return '#595959';
+          if (d.year >= 1990) return '#737373';
+          return '#a3a3a3';
+        })
+        .style('cursor', 'pointer');
+
+      // Tooltip
+      const tooltip = d3.select(container)
+        .append('div')
+        .style('position', 'absolute')
+        .style('background', '#1a1a1a')
+        .style('color', 'white')
+        .style('padding', '0.5rem 0.75rem')
+        .style('font-size', '0.75rem')
+        .style('pointer-events', 'none')
+        .style('opacity', 0)
+        .style('z-index', 10);
+
+      bars.on('mouseenter', function(event, d) {
+        tooltip.html(`
+          <strong>${d.year}</strong><br>
+          ${d.count} álbumes<br>
+          ${d.hours.toFixed(1)}h escuchadas
+        `)
+        .style('opacity', 1);
+        d3.select(this).attr('fill', '#000');
+      })
+      .on('mousemove', function(event) {
+        const rect = container.getBoundingClientRect();
+        tooltip
+          .style('left', (event.clientX - rect.left + 10) + 'px')
+          .style('top', (event.clientY - rect.top - 10) + 'px');
+      })
+      .on('mouseleave', function(event, d) {
+        tooltip.style('opacity', 0);
+        d3.select(this).attr('fill', () => {
+          if (d.year >= 2020) return '#1a1a1a';
+          if (d.year >= 2010) return '#404040';
+          if (d.year >= 2000) return '#595959';
+          if (d.year >= 1990) return '#737373';
+          return '#a3a3a3';
+        });
+      });
+
+      // X axis - show only decades
+      const xAxis = d3.axisBottom(xScale)
+        .tickValues(data.filter(d => d.year % 10 === 0).map(d => d.year))
+        .tickFormat(d => d);
+
+      g.append('g')
+        .attr('class', 'scatter-axis')
+        .attr('transform', `translate(0,${height})`)
+        .call(xAxis);
+
+      // Y axis
+      const yAxis = d3.axisLeft(yScale)
+        .ticks(5)
+        .tickFormat(d => metric === 'count' ? d : `${d}h`);
+
+      g.append('g')
+        .attr('class', 'scatter-axis')
+        .call(yAxis);
+
+      // Y axis label
+      g.append('text')
+        .attr('class', 'scatter-axis-label')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -height / 2)
+        .attr('y', -35)
+        .attr('text-anchor', 'middle')
+        .text(metric === 'count' ? 'Álbumes' : 'Horas escuchadas');
     }
 
     init();
