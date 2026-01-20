@@ -210,6 +210,42 @@
       opacity: 0.8;
       margin-top: 2px;
     }
+
+    /* Scatterplot */
+    #scatter-container {
+      width: 100%;
+      height: 450px;
+      position: relative;
+    }
+
+    #scatter-container svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .scatter-point {
+      cursor: pointer;
+      transition: stroke-width 0.2s;
+    }
+
+    .scatter-point:hover {
+      stroke-width: 3px !important;
+    }
+
+    .scatter-quadrant-label {
+      font-size: 0.65rem;
+      fill: var(--gray-400);
+      font-weight: 600;
+    }
+
+    .scatter-axis text {
+      font-size: 0.7rem;
+    }
+
+    .scatter-axis-label {
+      font-size: 0.75rem;
+      fill: var(--text-muted);
+    }
   </style>
 </head>
 <body>
@@ -286,6 +322,30 @@
     </div>
   </div>
 
+  <div class="section">
+    <div class="section-header">Underground vs Mainstream</div>
+    <div class="section-content">
+      <div class="section-note">
+        ¿Escucho más artistas underground o mainstream? Popularidad de Spotify (0-100) vs tiempo que les dediqué.
+      </div>
+      <div class="network-controls">
+        <label>
+          Mostrar top:
+          <select id="scatter-limit">
+            <option value="30">30 artistas</option>
+            <option value="50" selected>50 artistas</option>
+            <option value="100">100 artistas</option>
+            <option value="200">200 artistas</option>
+          </select>
+        </label>
+        <span class="gallery-stats" id="scatter-stats"></span>
+      </div>
+      <div id="scatter-container">
+        <div class="network-tooltip" id="scatter-tooltip"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="methodology">
     <h3>Notas</h3>
     <ul>
@@ -293,6 +353,7 @@
       <li>Tiempo = suma de milisegundos escuchados de todos los tracks del álbum</li>
       <li>Click en un álbum para abrirlo en Spotify</li>
       <li>Red de colaboraciones: muestra artistas que aparecen juntos en tracks</li>
+      <li>Popularidad: métrica de Spotify (0-100) basada en reproducciones globales recientes</li>
     </ul>
   </div>
 
@@ -603,6 +664,187 @@
       }
     }
 
+    // Render scatterplot: Popularity vs Time Listened
+    function renderScatterplot(artists, limit = 50) {
+      const container = document.getElementById('scatter-container');
+      const stats = document.getElementById('scatter-stats');
+      const tooltip = document.getElementById('scatter-tooltip');
+
+      // Clear previous
+      container.querySelectorAll('svg').forEach(s => s.remove());
+
+      // Filter and sort artists
+      const filtered = artists
+        .filter(a => a.ms_played > 0 && a.popularity !== undefined)
+        .sort((a, b) => b.ms_played - a.ms_played)
+        .slice(0, limit);
+
+      // Calculate stats
+      const avgPop = filtered.reduce((sum, a) => sum + a.popularity, 0) / filtered.length;
+      stats.textContent = `${filtered.length} artistas · Popularidad promedio: ${avgPop.toFixed(0)}`;
+
+      const margin = { top: 30, right: 30, bottom: 50, left: 60 };
+      const width = container.clientWidth - margin.left - margin.right;
+      const height = (container.clientHeight || 450) - margin.top - margin.bottom;
+
+      // Create SVG
+      const svg = d3.select(container)
+        .append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom);
+
+      const g = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      // Scales
+      const xScale = d3.scaleLinear()
+        .domain([0, 100])
+        .range([0, width]);
+
+      const maxHours = d3.max(filtered, d => d.ms_played) / 3600000;
+      const yScale = d3.scaleLinear()
+        .domain([0, maxHours * 1.1])
+        .range([height, 0]);
+
+      const radiusScale = d3.scaleSqrt()
+        .domain([0, d3.max(filtered, d => d.ms_played)])
+        .range([6, 25]);
+
+      // Create defs for image patterns
+      const defs = svg.append('defs');
+      filtered.forEach((d, i) => {
+        const img = d.images?.[2]?.url || d.images?.[1]?.url || d.images?.[0]?.url;
+        if (img) {
+          defs.append('pattern')
+            .attr('id', `scatter-img-${i}`)
+            .attr('width', 1)
+            .attr('height', 1)
+            .attr('patternContentUnits', 'objectBoundingBox')
+            .append('image')
+            .attr('href', img)
+            .attr('width', 1)
+            .attr('height', 1)
+            .attr('preserveAspectRatio', 'xMidYMid slice');
+        }
+      });
+
+      // Add quadrant backgrounds
+      const midX = 50; // Popularity midpoint
+      const midY = maxHours / 2;
+
+      // Quadrant labels
+      g.append('text')
+        .attr('class', 'scatter-quadrant-label')
+        .attr('x', xScale(25))
+        .attr('y', 15)
+        .attr('text-anchor', 'middle')
+        .text('Underground favoritos');
+
+      g.append('text')
+        .attr('class', 'scatter-quadrant-label')
+        .attr('x', xScale(75))
+        .attr('y', 15)
+        .attr('text-anchor', 'middle')
+        .text('Mainstream favoritos');
+
+      g.append('text')
+        .attr('class', 'scatter-quadrant-label')
+        .attr('x', xScale(25))
+        .attr('y', height - 5)
+        .attr('text-anchor', 'middle')
+        .text('Underground ocasional');
+
+      g.append('text')
+        .attr('class', 'scatter-quadrant-label')
+        .attr('x', xScale(75))
+        .attr('y', height - 5)
+        .attr('text-anchor', 'middle')
+        .text('Mainstream ocasional');
+
+      // Add midline
+      g.append('line')
+        .attr('x1', xScale(50))
+        .attr('y1', 0)
+        .attr('x2', xScale(50))
+        .attr('y2', height)
+        .attr('stroke', '#e5e5e5')
+        .attr('stroke-dasharray', '4,4');
+
+      // Axes
+      const xAxis = d3.axisBottom(xScale)
+        .tickValues([0, 25, 50, 75, 100])
+        .tickFormat(d => d);
+
+      const yAxis = d3.axisLeft(yScale)
+        .ticks(5)
+        .tickFormat(d => `${d}h`);
+
+      g.append('g')
+        .attr('class', 'scatter-axis')
+        .attr('transform', `translate(0,${height})`)
+        .call(xAxis);
+
+      g.append('g')
+        .attr('class', 'scatter-axis')
+        .call(yAxis);
+
+      // Axis labels
+      g.append('text')
+        .attr('class', 'scatter-axis-label')
+        .attr('x', width / 2)
+        .attr('y', height + 40)
+        .attr('text-anchor', 'middle')
+        .text('← Underground · Popularidad en Spotify · Mainstream →');
+
+      g.append('text')
+        .attr('class', 'scatter-axis-label')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -height / 2)
+        .attr('y', -45)
+        .attr('text-anchor', 'middle')
+        .text('Horas escuchadas');
+
+      // Add index to data
+      filtered.forEach((d, i) => d.scatterIndex = i);
+
+      // Draw points
+      const points = g.selectAll('.scatter-point')
+        .data(filtered)
+        .join('circle')
+        .attr('class', 'scatter-point')
+        .attr('cx', d => xScale(d.popularity))
+        .attr('cy', d => yScale(d.ms_played / 3600000))
+        .attr('r', d => radiusScale(d.ms_played))
+        .attr('fill', d => {
+          const img = d.images?.[2]?.url || d.images?.[1]?.url || d.images?.[0]?.url;
+          return img ? `url(#scatter-img-${d.scatterIndex})` : '#1a1a1a';
+        })
+        .attr('stroke', '#1a1a1a')
+        .attr('stroke-width', 1.5);
+
+      // Tooltip
+      points.on('mouseenter', function(event, d) {
+        const hours = (d.ms_played / 3600000).toFixed(1);
+        const category = d.popularity < 50 ? 'Underground' : 'Mainstream';
+
+        tooltip.innerHTML = `
+          <div class="tooltip-title">${d.name}</div>
+          <div class="tooltip-detail">${hours}h escuchadas</div>
+          <div class="tooltip-detail">Popularidad: ${d.popularity}/100 (${category})</div>
+          ${d.genres?.length > 0 ? `<div class="tooltip-detail">${d.genres.slice(0, 2).join(', ')}</div>` : ''}
+        `;
+        tooltip.classList.add('visible');
+      })
+      .on('mousemove', function(event) {
+        const rect = container.getBoundingClientRect();
+        tooltip.style.left = (event.clientX - rect.left + 10) + 'px';
+        tooltip.style.top = (event.clientY - rect.top - 10) + 'px';
+      })
+      .on('mouseleave', function() {
+        tooltip.classList.remove('visible');
+      });
+    }
+
     async function init() {
       const data = await loadMetadata();
       albumsData = data.albums.filter(a => a.images?.length > 0 && a.ms_played > 0);
@@ -612,6 +854,9 @@
 
       // Initial render - Network graph
       renderNetworkGraph(data.tracks, data.artists, 2, 50);
+
+      // Initial render - Scatterplot
+      renderScatterplot(data.artists, 50);
 
       // Setup album gallery controls
       document.getElementById('sort-select').addEventListener('change', (e) => {
@@ -633,6 +878,11 @@
       document.getElementById('network-top-artists').addEventListener('change', (e) => {
         const minCollabs = parseInt(document.getElementById('network-min-collabs').value);
         renderNetworkGraph(data.tracks, data.artists, minCollabs, parseInt(e.target.value));
+      });
+
+      // Setup scatterplot controls
+      document.getElementById('scatter-limit').addEventListener('change', (e) => {
+        renderScatterplot(data.artists, parseInt(e.target.value));
       });
     }
 
