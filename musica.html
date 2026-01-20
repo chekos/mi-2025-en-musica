@@ -455,28 +455,31 @@
         .attr('height', height)
         .attr('viewBox', [0, 0, width, height]);
 
-      // Create defs for image patterns
-      const defs = svg.append('defs');
-
-      nodes.forEach((d, i) => {
-        if (d.image) {
-          defs.append('pattern')
-            .attr('id', `artist-img-${i}`)
-            .attr('width', 1)
-            .attr('height', 1)
-            .append('image')
-            .attr('href', d.image)
-            .attr('width', 80)
-            .attr('height', 80)
-            .attr('preserveAspectRatio', 'xMidYMid slice');
-        }
-      });
-
       // Scales
       const maxMs = d3.max(nodes, d => d.ms_played);
       const radiusScale = d3.scaleSqrt()
         .domain([0, maxMs])
         .range([4, 30]);
+
+      // Create defs for image patterns (after radiusScale is defined)
+      const defs = svg.append('defs');
+
+      nodes.forEach((d, i) => {
+        if (d.image) {
+          const r = radiusScale(d.ms_played);
+          const diameter = r * 2;
+          defs.append('pattern')
+            .attr('id', `artist-img-${i}`)
+            .attr('width', 1)
+            .attr('height', 1)
+            .attr('patternContentUnits', 'objectBoundingBox')
+            .append('image')
+            .attr('href', d.image)
+            .attr('width', 1)
+            .attr('height', 1)
+            .attr('preserveAspectRatio', 'xMidYMid slice');
+        }
+      });
 
       const maxEdgeWeight = d3.max(edges, d => d.weight);
       const strokeScale = d3.scaleSqrt()
