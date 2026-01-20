@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Música · Mi 2025 en Música</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .album-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 4px;
+    }
+
+    .album-item {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .album-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.2s ease;
+    }
+
+    .album-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .album-item .album-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+      padding: 2rem 0.5rem 0.5rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .album-item:hover .album-overlay {
+      opacity: 1;
+    }
+
+    .album-overlay .album-name {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .album-overlay .album-artist {
+      font-size: 0.55rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 2px;
+    }
+
+    .album-overlay .album-time {
+      font-size: 0.5rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+
+    .gallery-controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .gallery-controls label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .gallery-controls select {
+      font-family: inherit;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .gallery-stats {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    @media (max-width: 600px) {
+      .album-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi 2025 en Música</h1>
+    <p class="subtitle">Un año de escuchas en Spotify · Sergio Sánchez · California</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Resumen</a>
+    <a href="heatmaps.html">Heatmaps</a>
+    <a href="musica.html" class="active">Mi Música</a>
+  </nav>
+
+  <div class="section">
+    <div class="section-header">Galería de Álbumes</div>
+    <div class="section-content">
+      <div class="gallery-controls">
+        <label>
+          Ordenar por:
+          <select id="sort-select">
+            <option value="time">Tiempo escuchado</option>
+            <option value="plays">Reproducciones</option>
+            <option value="name">Nombre</option>
+            <option value="artist">Artista</option>
+            <option value="release">Fecha de lanzamiento</option>
+          </select>
+        </label>
+        <label>
+          Mostrar:
+          <select id="limit-select">
+            <option value="50">Top 50</option>
+            <option value="100" selected>Top 100</option>
+            <option value="200">Top 200</option>
+            <option value="all">Todos</option>
+          </select>
+        </label>
+        <span class="gallery-stats" id="gallery-stats"></span>
+      </div>
+      <div class="album-gallery" id="album-gallery"></div>
+    </div>
+  </div>
+
+  <div class="methodology">
+    <h3>Notas</h3>
+    <ul>
+      <li>Carátulas obtenidas de la API de Spotify</li>
+      <li>Tiempo = suma de milisegundos escuchados de todos los tracks del álbum</li>
+      <li>Click en un álbum para abrirlo en Spotify</li>
+    </ul>
+  </div>
+
+  <footer>
+    Creado con datos de Spotify + Claude Code para tacosdedatos
+  </footer>
+
+  <script src="js/charts.js"></script>
+  <script>
+    let albumsData = [];
+
+    async function loadMetadata() {
+      const response = await fetch('data/spotify-metadata.json');
+      return await response.json();
+    }
+
+    function renderAlbumGallery(albums, sortBy = 'time', limit = 100) {
+      const container = document.getElementById('album-gallery');
+      const stats = document.getElementById('gallery-stats');
+
+      // Sort albums
+      let sorted = [...albums];
+      switch (sortBy) {
+        case 'time':
+          sorted.sort((a, b) => (b.ms_played || 0) - (a.ms_played || 0));
+          break;
+        case 'plays':
+          sorted.sort((a, b) => (b.play_count || 0) - (a.play_count || 0));
+          break;
+        case 'name':
+          sorted.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+          break;
+        case 'artist':
+          sorted.sort((a, b) => (a.artist_names?.[0] || '').localeCompare(b.artist_names?.[0] || ''));
+          break;
+        case 'release':
+          sorted.sort((a, b) => (b.release_date || '').localeCompare(a.release_date || ''));
+          break;
+      }
+
+      // Apply limit
+      const limited = limit === 'all' ? sorted : sorted.slice(0, parseInt(limit));
+
+      // Update stats
+      const totalHours = limited.reduce((sum, a) => sum + (a.ms_played || 0), 0) / 3600000;
+      stats.textContent = `${limited.length} álbumes · ${totalHours.toFixed(1)}h`;
+
+      // Render gallery
+      container.innerHTML = limited.map(album => {
+        const image = album.images?.[1]?.url || album.images?.[0]?.url || '';
+        const hours = ((album.ms_played || 0) / 3600000).toFixed(1);
+        const spotifyUrl = `https://open.spotify.com/album/${album.id}`;
+
+        return `
+          <a href="${spotifyUrl}" target="_blank" rel="noopener" class="album-item" title="${album.name} - ${album.artist_names?.[0] || 'Unknown'}">
+            <img src="${image}" alt="${album.name}" loading="lazy">
+            <div class="album-overlay">
+              <div class="album-name">${album.name}</div>
+              <div class="album-artist">${album.artist_names?.[0] || ''}</div>
+              <div class="album-time">${hours}h</div>
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    async function init() {
+      const data = await loadMetadata();
+      albumsData = data.albums.filter(a => a.images?.length > 0 && a.ms_played > 0);
+
+      // Initial render
+      renderAlbumGallery(albumsData, 'time', 100);
+
+      // Setup controls
+      document.getElementById('sort-select').addEventListener('change', (e) => {
+        const limit = document.getElementById('limit-select').value;
+        renderAlbumGallery(albumsData, e.target.value, limit);
+      });
+
+      document.getElementById('limit-select').addEventListener('change', (e) => {
+        const sortBy = document.getElementById('sort-select').value;
+        renderAlbumGallery(albumsData, sortBy, e.target.value);
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
