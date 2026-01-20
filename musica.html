@@ -761,12 +761,20 @@
         .attr('text-anchor', 'middle')
         .text('Mainstream ocasional');
 
-      // Add midline
+      // Add midlines (vertical for popularity, horizontal for time)
       g.append('line')
         .attr('x1', xScale(50))
         .attr('y1', 0)
         .attr('x2', xScale(50))
         .attr('y2', height)
+        .attr('stroke', '#e5e5e5')
+        .attr('stroke-dasharray', '4,4');
+
+      g.append('line')
+        .attr('x1', 0)
+        .attr('y1', yScale(midY))
+        .attr('x2', width)
+        .attr('y2', yScale(midY))
         .attr('stroke', '#e5e5e5')
         .attr('stroke-dasharray', '4,4');
 
