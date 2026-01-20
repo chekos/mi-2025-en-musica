@@ -10,13 +10,17 @@
   <style>
     .album-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-rows: repeat(5, 100px);
+      grid-auto-flow: column;
+      grid-auto-columns: 100px;
       gap: 4px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 0.5rem;
     }
 
     .album-item {
       position: relative;
-      aspect-ratio: 1;
       overflow: hidden;
       cursor: pointer;
     }
@@ -99,7 +103,8 @@
 
     @media (max-width: 600px) {
       .album-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-rows: repeat(5, 80px);
+        grid-auto-columns: 80px;
       }
     }
   </style>
