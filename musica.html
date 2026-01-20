@@ -127,13 +127,12 @@
     }
 
     .network-node circle {
-      stroke: var(--bg);
-      stroke-width: 1.5px;
-      transition: stroke-width 0.2s;
+      transition: stroke-width 0.2s, stroke 0.2s;
     }
 
     .network-node:hover circle {
-      stroke-width: 3px;
+      stroke-width: 4px !important;
+      stroke: #000 !important;
     }
 
     .network-node text {
@@ -370,7 +369,8 @@
           name: a.name,
           ms_played: a.ms_played || 0,
           popularity: a.popularity || 0,
-          genres: a.genres || []
+          genres: a.genres || [],
+          image: a.images?.[2]?.url || a.images?.[1]?.url || a.images?.[0]?.url || null
         });
       });
 
@@ -455,6 +455,23 @@
         .attr('height', height)
         .attr('viewBox', [0, 0, width, height]);
 
+      // Create defs for image patterns
+      const defs = svg.append('defs');
+
+      nodes.forEach((d, i) => {
+        if (d.image) {
+          defs.append('pattern')
+            .attr('id', `artist-img-${i}`)
+            .attr('width', 1)
+            .attr('height', 1)
+            .append('image')
+            .attr('href', d.image)
+            .attr('width', 80)
+            .attr('height', 80)
+            .attr('preserveAspectRatio', 'xMidYMid slice');
+        }
+      });
+
       // Scales
       const maxMs = d3.max(nodes, d => d.ms_played);
       const radiusScale = d3.scaleSqrt()
@@ -504,9 +521,14 @@
           .on('drag', dragged)
           .on('end', dragended));
 
+      // Add index to nodes for pattern reference
+      nodes.forEach((d, i) => d.nodeIndex = i);
+
       node.append('circle')
         .attr('r', d => radiusScale(d.ms_played))
-        .attr('fill', d => d.genres?.length > 0 ? '#1a1a1a' : '#737373');
+        .attr('fill', d => d.image ? `url(#artist-img-${d.nodeIndex})` : (d.genres?.length > 0 ? '#1a1a1a' : '#737373'))
+        .attr('stroke', '#1a1a1a')
+        .attr('stroke-width', 2);
 
       node.append('text')
         .text(d => d.name)
