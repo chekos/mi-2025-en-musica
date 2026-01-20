@@ -7,6 +7,7 @@ Uso:
 """
 
 import json
+import os
 import time
 from collections import defaultdict
 from pathlib import Path
@@ -18,9 +19,14 @@ ROOT = Path(__file__).parent.parent
 DATA_FILE = ROOT / "data" / "streaming_history_2025.json"
 OUTPUT_FILE = ROOT / "data" / "spotify-metadata.json"
 
-# Credenciales (del proyecto hermano)
-CLIENT_ID = "REDACTED_CLIENT_ID"
-CLIENT_SECRET = "REDACTED_CLIENT_SECRET"
+# Credenciales desde variables de entorno
+CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
+
+if not CLIENT_ID or not CLIENT_SECRET:
+    raise ValueError(
+        "Missing Spotify credentials. Set SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET environment variables."
+    )
 
 
 def get_access_token() -> str:
