@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heatmaps · Mi 2025 en Música</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi 2025 en Música</h1>
+    <p class="subtitle">Un año de escuchas en Spotify · Sergio Sánchez · California</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Resumen</a>
+    <a href="heatmaps.html" class="active">Heatmaps</a>
+  </nav>
+
+  <div class="section">
+    <div class="section-header">Hora × Mes</div>
+    <div class="section-content">
+      <div class="section-note">Cada celda muestra las reproducciones en esa hora y mes</div>
+      <div class="chart-container" id="heatmap-chart"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Día de la Semana × Hora (por Mes)</div>
+    <div class="section-content">
+      <div class="section-note">Small multiples: cada mini-heatmap es un mes. X = día (Lun–Dom), Y = hora (0–23)</div>
+      <div class="chart-container" id="faceted-heatmap"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Día del Mes × Hora (por Mes)</div>
+    <div class="section-content">
+      <div class="section-note">Small multiples: X = hora (0–23), Y = día del mes (1–31). Tamaño y saturación = reproducciones.</div>
+      <div class="chart-container" id="day-hour-heatmap"></div>
+    </div>
+  </div>
+
+  <div class="methodology">
+    <h3>Notas metodológicas</h3>
+    <ul>
+      <li>Datos: Spotify Extended Streaming History, enero–diciembre 2025</li>
+      <li>Zona horaria: Todos los timestamps convertidos de UTC a Pacific Time</li>
+      <li>Escala de color: Grises, donde más oscuro = más reproducciones</li>
+      <li>Bubble chart: Tamaño y saturación codifican la misma variable (reproducciones)</li>
+    </ul>
+  </div>
+
+  <footer>
+    Creado con datos de Spotify + Claude Code para tacosdedatos
+  </footer>
+
+  <script src="js/charts.js"></script>
+  <script>
+    async function init() {
+      const data = await loadData();
+      renderHeatmap(data.hourly_heatmap);
+      renderFacetedHeatmap(data.weekday_hour_heatmap);
+      renderDayHourHeatmap(data.day_hour_heatmap);
+    }
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+:root {
+  --bg: #fefefe;
+  --text: #1a1a1a;
+  --text-muted: #666;
+  --border: #1a1a1a;
+  --accent: #1a1a1a;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  border: 2px solid var(--border);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Narrative intro */
+.narrative {
+  border: 2px solid var(--border);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--gray-100);
+}
+
+.narrative p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.narrative strong {
+  background: var(--gray-800);
+  color: var(--bg);
+  padding: 0.1em 0.3em;
+}
+
+.highlight-song {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Condensed metrics */
+.metrics-condensed {
+  border: 2px solid var(--border);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.metrics-condensed .big-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.metrics-condensed .big-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.metrics-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.metrics-row span {
+  color: var(--text-muted);
+}
+
+/* Sections */
+.section {
+  border: 2px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  background: var(--border);
+  color: var(--bg);
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-content {
+  padding: 1.5rem;
+}
+
+.section-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+/* Top Lists */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.column-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.top-list {
+  list-style: none;
+}
+
+.top-list li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr auto;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--gray-100);
+  align-items: baseline;
+}
+
+.top-list li:last-child {
+  border-bottom: none;
+}
+
+.rank {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.top-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-artist {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.top-stats {
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Charts */
+.chart-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chart-annotation {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Comparison */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.comparison-card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.comparison-card:first-child {
+  border-right: 1px solid var(--gray-200);
+}
+
+.comparison-title {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.comparison-value {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.comparison-unit {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.comparison-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.comparison-secondary {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Skip list */
+.skip-list {
+  list-style: none;
+}
+
+.skip-list li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-100);
+  align-items: center;
+}
+
+.skip-rate {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.skip-info {
+  font-size: 0.85rem;
+}
+
+.skip-track {
+  font-weight: 600;
+}
+
+.skip-artist {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Methodology */
+.methodology {
+  border: 2px solid var(--border);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--gray-100);
+}
+
+.methodology h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.methodology ul {
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.methodology li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.methodology li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* Navigation */
+nav {
+  border: 2px solid var(--border);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+  background: var(--gray-100);
+}
+
+nav a.active {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* Observable Plot overrides */
+svg {
+  font-family: inherit;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .two-columns,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .metrics-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}

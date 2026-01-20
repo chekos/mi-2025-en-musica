@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi 2025 en Música</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi 2025 en Música</h1>
+    <p class="subtitle">Un año de escuchas en Spotify · Sergio Sánchez · California</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Resumen</a>
+    <a href="heatmaps.html">Heatmaps</a>
+  </nav>
+
+  <div class="narrative">
+    <p>
+      2025 fue un año de <strong>trabajo intenso</strong> y <strong>exploración creativa</strong>.
+      Las responsabilidades crecieron, las reuniones se multiplicaron, pero algo cambió en mayo:
+      llegó Claude Code, y con él explotó mi productividad. En seis semanas hice más que en seis años.
+    </p>
+    <p>
+      Empecé a escribir otra vez para Tacos de Datos. La música fue mi compañera constante
+      —especialmente en esas tardes después del trabajo, entre las 4pm y 8pm, cuando el flow
+      de código y el flow del hip-hop se fusionaban.
+    </p>
+    <div class="highlight-song">
+      <strong>"Mega Drive"</strong> de Geassassin fue mi canción del año.
+      Me ayuda a concentrarme, me recuerda de dónde vengo (Tijuana),
+      y me hace pensar a dónde voy. Fntxy rapea en spanglish con referencias
+      a mi ciudad. Es productividad, nostalgia y futuro en una sola canción.
+    </div>
+  </div>
+
+  <div class="metrics-condensed">
+    <div class="big-number" id="total-minutes">—</div>
+    <div class="big-label">minutos de música</div>
+    <div class="metrics-row" id="metrics-secondary"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Top Artistas & Canciones</div>
+    <div class="section-content two-columns">
+      <div>
+        <div class="column-title">Top 5 Artistas</div>
+        <ul class="top-list" id="top-artists"></ul>
+      </div>
+      <div>
+        <div class="column-title">Top 5 Canciones</div>
+        <ul class="top-list" id="top-tracks"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">¿Cuándo escucho música?</div>
+    <div class="section-content">
+      <div class="section-note">Hora del día en Pacific Time (California)</div>
+      <div class="chart-container" id="hourly-chart"></div>
+      <div class="chart-annotation" id="hourly-annotation"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Actividad por Mes</div>
+    <div class="section-content">
+      <div class="section-note">
+        <span style="display: inline-block; width: 12px; height: 12px; background: #1a1a1a; margin-right: 4px; vertical-align: middle;"></span> Mayor salto (+18.6h): Claude Code llegó en mayo
+        <span style="margin-left: 1rem; display: inline-block; width: 12px; height: 12px; background: #525252; margin-right: 4px; vertical-align: middle;"></span> Pico absoluto: Noviembre (días festivos)
+      </div>
+      <div class="chart-container" id="monthly-chart"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Semana vs Fin de Semana</div>
+    <div class="section-content">
+      <div class="section-note">Promedio por día (normalizado para comparación justa)</div>
+      <div class="comparison-grid" id="weekday-comparison"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Canciones que nunca termino</div>
+    <div class="section-content">
+      <div class="section-note">Solo canciones con 10+ reproducciones (muestras más confiables)</div>
+      <ul class="skip-list" id="skipped-tracks"></ul>
+    </div>
+  </div>
+
+  <div class="methodology">
+    <h3>Notas metodológicas</h3>
+    <ul>
+      <li>Datos: Spotify Extended Streaming History, enero–diciembre 2025</li>
+      <li>Zona horaria: Todos los timestamps convertidos de UTC a Pacific Time</li>
+      <li>Skip: Canción marcada como "skipped" o terminada con forward/back button</li>
+      <li>Skip rate: Solo se muestran canciones con 10+ reproducciones para mayor confiabilidad</li>
+      <li>Un "día" equivale a 24 horas continuas de reproducción</li>
+    </ul>
+  </div>
+
+  <footer>
+    Creado con datos de Spotify + Claude Code para tacosdedatos
+  </footer>
+
+  <script src="js/charts.js"></script>
+  <script>
+    async function init() {
+      const data = await loadData();
+      renderMetrics(data.overview);
+      renderTopArtists(data.top_artists);
+      renderTopTracks(data.top_tracks);
+      renderHourlyChart(data.hourly_distribution, data.peak_hours);
+      renderMonthlyChart(data.monthly_trend);
+      renderWeekdayComparison(data.weekday_vs_weekend);
+      renderSkippedTracks(data.skipped_tracks);
+    }
+    init();
+  </script>
+</body>
+</html>
