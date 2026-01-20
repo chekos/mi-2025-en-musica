@@ -200,6 +200,16 @@ function renderDayHourHeatmap(heatmapData) {
                            "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
   const daysInMonth = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
+  // Nombres de los bloques de 4 horas
+  const timeBlockNames = [
+    "Madrugada",   // 0: 1am-5am
+    "Mañana",      // 1: 5am-9am
+    "Mediodía",    // 2: 9am-1pm
+    "Tarde",       // 3: 1pm-5pm
+    "Noche",       // 4: 5pm-9pm
+    "Medianoche"   // 5: 9pm-1am
+  ];
+
   const maxPlays = Math.max(...heatmapData.map(d => d.plays));
 
   container.style.display = 'flex';
@@ -231,26 +241,26 @@ function renderDayHourHeatmap(heatmapData) {
 
     const marginTop = isFirst ? 22 : 8;
     const marginBottom = isLast ? 22 : 8;
-    const baseHeight = 5 * maxDay;
+    const baseHeight = 18 * 6; // 6 bloques de tiempo
 
     const chart = Plot.plot({
       height: baseHeight + marginTop + marginBottom,
       width: container.clientWidth - 36 || 820,
-      marginLeft: 28,
+      marginLeft: 75,
       marginBottom: marginBottom,
       marginTop: marginTop,
       marginRight: 8,
       padding: 0,
       clip: false,
       x: {
-        domain: d3.range(0, 24),
-        tickFormat: d => `${d}`,
+        domain: d3.range(1, maxDay + 1),
+        tickFormat: d => d % 5 === 1 ? `${d}` : "",
         label: null,
         axis: isFirst ? "top" : (isLast ? "bottom" : null)
       },
       y: {
-        domain: d3.range(1, maxDay + 1),
-        tickFormat: d => d % 5 === 1 ? `${d}` : "",
+        domain: d3.range(0, 6),
+        tickFormat: d => timeBlockNames[d],
         label: null,
         reverse: false
       },
@@ -261,14 +271,14 @@ function renderDayHourHeatmap(heatmapData) {
       },
       marks: [
         Plot.dot(chartData, {
-          x: "hour",
-          y: "day",
-          r: d => Math.sqrt(d.plays) * 2.5,
+          x: "day",
+          y: "time_block",
+          r: d => Math.sqrt(d.plays) * 3,
           fill: "plays",
           tip: {
             format: {
-              x: d => `${d}:00`,
-              y: d => `día ${d}`
+              x: d => `día ${d}`,
+              y: d => timeBlockNames[d]
             }
           }
         })

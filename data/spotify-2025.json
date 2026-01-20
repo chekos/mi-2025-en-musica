@@ -5043,5119 +5043,3361 @@
     {
       "month": 1,
       "day": 4,
-      "hour": 19,
+      "time_block": 4,
       "plays": 5
     },
     {
       "month": 1,
       "day": 5,
-      "hour": 10,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 1,
       "day": 5,
-      "hour": 19,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 1,
       "day": 7,
-      "hour": 20,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 1,
       "day": 8,
-      "hour": 21,
+      "time_block": 5,
       "plays": 3
     },
     {
       "month": 1,
       "day": 12,
-      "hour": 14,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 1,
       "day": 12,
-      "hour": 20,
+      "time_block": 4,
       "plays": 5
     },
     {
       "month": 1,
       "day": 13,
-      "hour": 19,
-      "plays": 8
+      "time_block": 4,
+      "plays": 11
     },
     {
       "month": 1,
       "day": 13,
-      "hour": 20,
-      "plays": 3
-    },
-    {
-      "month": 1,
-      "day": 13,
-      "hour": 21,
+      "time_block": 5,
       "plays": 2
     },
     {
       "month": 1,
       "day": 15,
-      "hour": 21,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 1,
       "day": 17,
-      "hour": 20,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 1,
       "day": 17,
-      "hour": 21,
+      "time_block": 5,
       "plays": 20
     },
     {
       "month": 1,
       "day": 18,
-      "hour": 9,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 1,
       "day": 19,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 1,
       "day": 22,
-      "hour": 8,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 1,
       "day": 22,
-      "hour": 9,
-      "plays": 17
-    },
-    {
-      "month": 1,
-      "day": 22,
-      "hour": 10,
-      "plays": 1
+      "time_block": 2,
+      "plays": 18
     },
     {
       "month": 1,
       "day": 23,
-      "hour": 12,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 1,
       "day": 25,
-      "hour": 8,
+      "time_block": 1,
       "plays": 12
     },
     {
       "month": 1,
       "day": 25,
-      "hour": 9,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 1,
       "day": 25,
-      "hour": 14,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 1,
       "day": 26,
-      "hour": 12,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 1,
       "day": 26,
-      "hour": 16,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 1,
       "day": 26,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 1,
-      "day": 26,
-      "hour": 19,
-      "plays": 5
+      "time_block": 4,
+      "plays": 11
     },
     {
       "month": 1,
       "day": 29,
-      "hour": 10,
+      "time_block": 2,
       "plays": 4
     },
     {
       "month": 2,
       "day": 2,
-      "hour": 8,
+      "time_block": 1,
       "plays": 4
     },
     {
       "month": 2,
       "day": 2,
-      "hour": 13,
-      "plays": 8
-    },
-    {
-      "month": 2,
-      "day": 2,
-      "hour": 14,
-      "plays": 8
+      "time_block": 3,
+      "plays": 16
     },
     {
       "month": 2,
       "day": 3,
-      "hour": 5,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 2,
       "day": 4,
-      "hour": 4,
+      "time_block": 0,
       "plays": 1
     },
     {
       "month": 2,
       "day": 4,
-      "hour": 14,
-      "plays": 4
-    },
-    {
-      "month": 2,
-      "day": 4,
-      "hour": 15,
-      "plays": 5
+      "time_block": 3,
+      "plays": 9
     },
     {
       "month": 2,
       "day": 6,
-      "hour": 13,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 2,
       "day": 8,
-      "hour": 16,
+      "time_block": 3,
       "plays": 6
     },
     {
       "month": 2,
       "day": 8,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 2,
-      "day": 8,
-      "hour": 18,
-      "plays": 3
+      "time_block": 4,
+      "plays": 5
     },
     {
       "month": 2,
       "day": 9,
-      "hour": 15,
-      "plays": 11
+      "time_block": 3,
+      "plays": 28
     },
     {
       "month": 2,
       "day": 9,
-      "hour": 16,
-      "plays": 17
-    },
-    {
-      "month": 2,
-      "day": 9,
-      "hour": 17,
+      "time_block": 4,
       "plays": 13
     },
     {
       "month": 2,
       "day": 10,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 2,
       "day": 10,
-      "hour": 9,
-      "plays": 18
+      "time_block": 2,
+      "plays": 28
     },
     {
       "month": 2,
       "day": 10,
-      "hour": 11,
-      "plays": 5
-    },
-    {
-      "month": 2,
-      "day": 10,
-      "hour": 12,
-      "plays": 5
-    },
-    {
-      "month": 2,
-      "day": 10,
-      "hour": 13,
-      "plays": 3
-    },
-    {
-      "month": 2,
-      "day": 10,
-      "hour": 16,
-      "plays": 1
+      "time_block": 3,
+      "plays": 4
     },
     {
       "month": 2,
       "day": 11,
-      "hour": 12,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 2,
       "day": 11,
-      "hour": 14,
-      "plays": 2
+      "time_block": 3,
+      "plays": 4
     },
     {
       "month": 2,
       "day": 11,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 2,
-      "day": 11,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 2,
-      "day": 11,
-      "hour": 19,
-      "plays": 7
+      "time_block": 4,
+      "plays": 13
     },
     {
       "month": 2,
       "day": 12,
-      "hour": 6,
-      "plays": 3
-    },
-    {
-      "month": 2,
-      "day": 12,
-      "hour": 8,
-      "plays": 11
+      "time_block": 1,
+      "plays": 14
     },
     {
       "month": 2,
       "day": 13,
-      "hour": 20,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 2,
       "day": 16,
-      "hour": 14,
+      "time_block": 3,
       "plays": 2
     },
     {
       "month": 2,
       "day": 17,
-      "hour": 19,
-      "plays": 3
-    },
-    {
-      "month": 2,
-      "day": 17,
-      "hour": 20,
-      "plays": 6
+      "time_block": 4,
+      "plays": 9
     },
     {
       "month": 2,
       "day": 18,
-      "hour": 20,
+      "time_block": 4,
       "plays": 11
     },
     {
       "month": 2,
       "day": 20,
-      "hour": 15,
+      "time_block": 3,
       "plays": 2
     },
     {
       "month": 2,
       "day": 23,
-      "hour": 14,
-      "plays": 5
-    },
-    {
-      "month": 2,
-      "day": 23,
-      "hour": 15,
-      "plays": 10
-    },
-    {
-      "month": 2,
-      "day": 23,
-      "hour": 16,
-      "plays": 10
+      "time_block": 3,
+      "plays": 25
     },
     {
       "month": 2,
       "day": 25,
-      "hour": 7,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 2,
       "day": 25,
-      "hour": 11,
-      "plays": 7
+      "time_block": 2,
+      "plays": 11
     },
     {
       "month": 2,
       "day": 25,
-      "hour": 12,
-      "plays": 4
+      "time_block": 4,
+      "plays": 23
     },
     {
       "month": 2,
       "day": 25,
-      "hour": 18,
-      "plays": 9
-    },
-    {
-      "month": 2,
-      "day": 25,
-      "hour": 19,
-      "plays": 9
-    },
-    {
-      "month": 2,
-      "day": 25,
-      "hour": 20,
-      "plays": 5
-    },
-    {
-      "month": 2,
-      "day": 25,
-      "hour": 21,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 2,
       "day": 26,
-      "hour": 7,
+      "time_block": 1,
       "plays": 4
     },
     {
       "month": 2,
       "day": 26,
-      "hour": 20,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 2,
       "day": 27,
-      "hour": 12,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 2,
       "day": 27,
-      "hour": 15,
+      "time_block": 3,
       "plays": 3
     },
     {
       "month": 2,
       "day": 28,
-      "hour": 2,
+      "time_block": 0,
       "plays": 1
     },
     {
       "month": 2,
       "day": 28,
-      "hour": 7,
+      "time_block": 1,
       "plays": 6
     },
     {
       "month": 2,
       "day": 28,
-      "hour": 14,
-      "plays": 4
-    },
-    {
-      "month": 2,
-      "day": 28,
-      "hour": 15,
-      "plays": 4
+      "time_block": 3,
+      "plays": 8
     },
     {
       "month": 3,
       "day": 1,
-      "hour": 12,
+      "time_block": 2,
       "plays": 7
     },
     {
       "month": 3,
       "day": 1,
-      "hour": 13,
-      "plays": 5
+      "time_block": 3,
+      "plays": 8
     },
     {
       "month": 3,
       "day": 1,
-      "hour": 16,
-      "plays": 3
+      "time_block": 4,
+      "plays": 16
     },
     {
       "month": 3,
       "day": 1,
-      "hour": 17,
-      "plays": 4
-    },
-    {
-      "month": 3,
-      "day": 1,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 3,
-      "day": 1,
-      "hour": 20,
-      "plays": 11
-    },
-    {
-      "month": 3,
-      "day": 1,
-      "hour": 23,
+      "time_block": 5,
       "plays": 4
     },
     {
       "month": 3,
       "day": 2,
-      "hour": 0,
+      "time_block": 5,
       "plays": 4
     },
     {
       "month": 3,
       "day": 3,
-      "hour": 9,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 3,
       "day": 4,
-      "hour": 17,
-      "plays": 10
+      "time_block": 4,
+      "plays": 15
     },
     {
       "month": 3,
       "day": 4,
-      "hour": 18,
-      "plays": 4
-    },
-    {
-      "month": 3,
-      "day": 4,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 3,
-      "day": 4,
-      "hour": 21,
-      "plays": 2
-    },
-    {
-      "month": 3,
-      "day": 4,
-      "hour": 22,
-      "plays": 6
+      "time_block": 5,
+      "plays": 8
     },
     {
       "month": 3,
       "day": 5,
-      "hour": 18,
+      "time_block": 4,
       "plays": 4
     },
     {
       "month": 3,
       "day": 6,
-      "hour": 7,
-      "plays": 3
+      "time_block": 1,
+      "plays": 19
     },
     {
       "month": 3,
       "day": 6,
-      "hour": 8,
-      "plays": 16
-    },
-    {
-      "month": 3,
-      "day": 6,
-      "hour": 9,
+      "time_block": 2,
       "plays": 13
     },
     {
       "month": 3,
       "day": 6,
-      "hour": 19,
+      "time_block": 4,
       "plays": 25
     },
     {
       "month": 3,
       "day": 7,
-      "hour": 13,
-      "plays": 6
-    },
-    {
-      "month": 3,
-      "day": 7,
-      "hour": 14,
-      "plays": 7
+      "time_block": 3,
+      "plays": 13
     },
     {
       "month": 3,
       "day": 8,
-      "hour": 8,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 3,
       "day": 8,
-      "hour": 10,
-      "plays": 6
+      "time_block": 2,
+      "plays": 12
     },
     {
       "month": 3,
       "day": 8,
-      "hour": 11,
-      "plays": 5
-    },
-    {
-      "month": 3,
-      "day": 8,
-      "hour": 12,
-      "plays": 1
-    },
-    {
-      "month": 3,
-      "day": 8,
-      "hour": 17,
+      "time_block": 4,
       "plays": 10
     },
     {
       "month": 3,
       "day": 9,
-      "hour": 11,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 3,
       "day": 10,
-      "hour": 19,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 3,
       "day": 11,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 3,
       "day": 12,
-      "hour": 10,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 3,
       "day": 13,
-      "hour": 13,
-      "plays": 4
+      "time_block": 3,
+      "plays": 9
     },
     {
       "month": 3,
-      "day": 13,
-      "hour": 14,
+      "day": 14,
+      "time_block": 1,
+      "plays": 9
+    },
+    {
+      "month": 3,
+      "day": 14,
+      "time_block": 5,
+      "plays": 9
+    },
+    {
+      "month": 3,
+      "day": 15,
+      "time_block": 5,
+      "plays": 17
+    },
+    {
+      "month": 3,
+      "day": 15,
+      "time_block": 0,
+      "plays": 25
+    },
+    {
+      "month": 3,
+      "day": 15,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 3,
+      "day": 18,
+      "time_block": 3,
       "plays": 5
     },
     {
       "month": 3,
-      "day": 14,
-      "hour": 8,
-      "plays": 9
-    },
-    {
-      "month": 3,
-      "day": 14,
-      "hour": 23,
-      "plays": 9
-    },
-    {
-      "month": 3,
-      "day": 15,
-      "hour": 0,
-      "plays": 17
-    },
-    {
-      "month": 3,
-      "day": 15,
-      "hour": 1,
-      "plays": 17
-    },
-    {
-      "month": 3,
-      "day": 15,
-      "hour": 2,
-      "plays": 8
-    },
-    {
-      "month": 3,
-      "day": 15,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 3,
       "day": 18,
-      "hour": 14,
-      "plays": 4
-    },
-    {
-      "month": 3,
-      "day": 18,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 3,
-      "day": 18,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 3,
-      "day": 18,
-      "hour": 19,
-      "plays": 17
-    },
-    {
-      "month": 3,
-      "day": 18,
-      "hour": 20,
-      "plays": 15
+      "time_block": 4,
+      "plays": 35
     },
     {
       "month": 3,
       "day": 19,
-      "hour": 5,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 3,
       "day": 19,
-      "hour": 20,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 3,
       "day": 20,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 3,
       "day": 21,
-      "hour": 11,
+      "time_block": 2,
       "plays": 5
     },
     {
       "month": 3,
       "day": 21,
-      "hour": 13,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 3,
       "day": 21,
-      "hour": 18,
+      "time_block": 4,
       "plays": 4
     },
     {
       "month": 3,
       "day": 22,
-      "hour": 5,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 3,
       "day": 22,
-      "hour": 12,
+      "time_block": 2,
       "plays": 7
     },
     {
       "month": 3,
       "day": 22,
-      "hour": 13,
-      "plays": 2
+      "time_block": 3,
+      "plays": 13
     },
     {
       "month": 3,
       "day": 22,
-      "hour": 14,
-      "plays": 11
-    },
-    {
-      "month": 3,
-      "day": 22,
-      "hour": 23,
+      "time_block": 5,
       "plays": 6
     },
     {
       "month": 3,
       "day": 24,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 3,
       "day": 25,
-      "hour": 6,
-      "plays": 18
-    },
-    {
-      "month": 3,
-      "day": 25,
-      "hour": 7,
-      "plays": 17
-    },
-    {
-      "month": 3,
-      "day": 25,
-      "hour": 8,
-      "plays": 11
+      "time_block": 1,
+      "plays": 46
     },
     {
       "month": 3,
       "day": 27,
-      "hour": 2,
-      "plays": 1
+      "time_block": 0,
+      "plays": 8
     },
     {
       "month": 3,
       "day": 27,
-      "hour": 4,
-      "plays": 7
+      "time_block": 1,
+      "plays": 3
     },
     {
       "month": 3,
       "day": 27,
-      "hour": 5,
-      "plays": 1
-    },
-    {
-      "month": 3,
-      "day": 27,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 3,
-      "day": 27,
-      "hour": 13,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 3,
       "day": 28,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 3,
       "day": 28,
-      "hour": 11,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 3,
       "day": 29,
-      "hour": 4,
+      "time_block": 0,
       "plays": 4
     },
     {
       "month": 3,
       "day": 29,
-      "hour": 5,
-      "plays": 18
-    },
-    {
-      "month": 3,
-      "day": 29,
-      "hour": 6,
-      "plays": 13
-    },
-    {
-      "month": 3,
-      "day": 29,
-      "hour": 7,
-      "plays": 15
-    },
-    {
-      "month": 3,
-      "day": 29,
-      "hour": 8,
-      "plays": 2
+      "time_block": 1,
+      "plays": 48
     },
     {
       "month": 3,
       "day": 30,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 3,
       "day": 31,
-      "hour": 4,
+      "time_block": 0,
       "plays": 4
     },
     {
       "month": 3,
       "day": 31,
-      "hour": 5,
-      "plays": 14
+      "time_block": 1,
+      "plays": 58
     },
     {
       "month": 3,
       "day": 31,
-      "hour": 6,
-      "plays": 14
-    },
-    {
-      "month": 3,
-      "day": 31,
-      "hour": 7,
-      "plays": 15
-    },
-    {
-      "month": 3,
-      "day": 31,
-      "hour": 8,
-      "plays": 15
-    },
-    {
-      "month": 3,
-      "day": 31,
-      "hour": 9,
-      "plays": 17
-    },
-    {
-      "month": 3,
-      "day": 31,
-      "hour": 10,
-      "plays": 4
+      "time_block": 2,
+      "plays": 21
     },
     {
       "month": 4,
       "day": 1,
-      "hour": 4,
+      "time_block": 0,
       "plays": 1
     },
     {
       "month": 4,
       "day": 1,
-      "hour": 5,
-      "plays": 5
+      "time_block": 1,
+      "plays": 48
     },
     {
       "month": 4,
       "day": 1,
-      "hour": 6,
-      "plays": 16
-    },
-    {
-      "month": 4,
-      "day": 1,
-      "hour": 7,
+      "time_block": 2,
       "plays": 14
-    },
-    {
-      "month": 4,
-      "day": 1,
-      "hour": 8,
-      "plays": 13
-    },
-    {
-      "month": 4,
-      "day": 1,
-      "hour": 9,
-      "plays": 10
-    },
-    {
-      "month": 4,
-      "day": 1,
-      "hour": 11,
-      "plays": 4
     },
     {
       "month": 4,
       "day": 2,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 4,
-      "day": 2,
-      "hour": 19,
-      "plays": 3
+      "time_block": 4,
+      "plays": 4
     },
     {
       "month": 4,
       "day": 3,
-      "hour": 10,
+      "time_block": 2,
+      "plays": 43
+    },
+    {
+      "month": 4,
+      "day": 3,
+      "time_block": 4,
+      "plays": 11
+    },
+    {
+      "month": 4,
+      "day": 4,
+      "time_block": 1,
       "plays": 8
     },
     {
       "month": 4,
-      "day": 3,
-      "hour": 11,
-      "plays": 35
-    },
-    {
-      "month": 4,
-      "day": 3,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 4,
-      "day": 3,
-      "hour": 20,
-      "plays": 10
-    },
-    {
-      "month": 4,
       "day": 4,
-      "hour": 5,
-      "plays": 1
-    },
-    {
-      "month": 4,
-      "day": 4,
-      "hour": 6,
-      "plays": 7
-    },
-    {
-      "month": 4,
-      "day": 4,
-      "hour": 16,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 4,
       "day": 5,
-      "hour": 11,
-      "plays": 7
+      "time_block": 2,
+      "plays": 13
     },
     {
       "month": 4,
       "day": 5,
-      "hour": 12,
-      "plays": 6
-    },
-    {
-      "month": 4,
-      "day": 5,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 4,
       "day": 6,
-      "hour": 14,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 4,
       "day": 7,
-      "hour": 7,
-      "plays": 1
+      "time_block": 1,
+      "plays": 11
     },
     {
       "month": 4,
       "day": 7,
-      "hour": 8,
-      "plays": 10
-    },
-    {
-      "month": 4,
-      "day": 7,
-      "hour": 14,
-      "plays": 16
-    },
-    {
-      "month": 4,
-      "day": 7,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 4,
-      "day": 7,
-      "hour": 16,
-      "plays": 7
+      "time_block": 3,
+      "plays": 27
     },
     {
       "month": 4,
       "day": 8,
-      "hour": 17,
+      "time_block": 4,
       "plays": 4
     },
     {
       "month": 4,
       "day": 9,
-      "hour": 6,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 4,
       "day": 9,
-      "hour": 15,
-      "plays": 10
+      "time_block": 3,
+      "plays": 15
     },
     {
       "month": 4,
       "day": 9,
-      "hour": 16,
-      "plays": 5
-    },
-    {
-      "month": 4,
-      "day": 9,
-      "hour": 23,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 4,
       "day": 11,
-      "hour": 20,
+      "time_block": 4,
       "plays": 3
     },
     {
       "month": 4,
       "day": 12,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 4,
-      "day": 12,
-      "hour": 16,
-      "plays": 1
+      "time_block": 3,
+      "plays": 3
     },
     {
       "month": 4,
       "day": 14,
-      "hour": 10,
+      "time_block": 2,
       "plays": 13
     },
     {
       "month": 4,
       "day": 14,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 4,
-      "day": 14,
-      "hour": 16,
-      "plays": 12
+      "time_block": 3,
+      "plays": 16
     },
     {
       "month": 4,
       "day": 15,
-      "hour": 18,
-      "plays": 13
-    },
-    {
-      "month": 4,
-      "day": 15,
-      "hour": 19,
-      "plays": 15
+      "time_block": 4,
+      "plays": 28
     },
     {
       "month": 4,
       "day": 17,
-      "hour": 8,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 4,
       "day": 18,
-      "hour": 16,
+      "time_block": 3,
       "plays": 8
     },
     {
       "month": 4,
       "day": 19,
-      "hour": 13,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 4,
       "day": 20,
-      "hour": 15,
-      "plays": 3
-    },
-    {
-      "month": 4,
-      "day": 20,
-      "hour": 16,
-      "plays": 5
+      "time_block": 3,
+      "plays": 8
     },
     {
       "month": 4,
       "day": 22,
-      "hour": 13,
-      "plays": 11
-    },
-    {
-      "month": 4,
-      "day": 22,
-      "hour": 14,
-      "plays": 1
+      "time_block": 3,
+      "plays": 12
     },
     {
       "month": 4,
       "day": 23,
-      "hour": 22,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 4,
       "day": 24,
-      "hour": 18,
+      "time_block": 4,
       "plays": 14
     },
     {
       "month": 4,
       "day": 25,
-      "hour": 20,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 4,
       "day": 26,
-      "hour": 7,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 4,
       "day": 27,
-      "hour": 20,
+      "time_block": 4,
       "plays": 14
     },
     {
       "month": 4,
       "day": 28,
-      "hour": 14,
+      "time_block": 3,
       "plays": 8
     },
     {
       "month": 4,
       "day": 28,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 4,
       "day": 30,
-      "hour": 20,
+      "time_block": 4,
       "plays": 10
     },
     {
       "month": 5,
       "day": 1,
-      "hour": 19,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 1,
-      "hour": 20,
-      "plays": 23
+      "time_block": 4,
+      "plays": 25
     },
     {
       "month": 5,
       "day": 2,
-      "hour": 7,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 5,
       "day": 3,
-      "hour": 16,
+      "time_block": 3,
       "plays": 5
     },
     {
       "month": 5,
       "day": 3,
-      "hour": 18,
-      "plays": 5
+      "time_block": 4,
+      "plays": 22
     },
     {
       "month": 5,
       "day": 3,
-      "hour": 19,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 3,
-      "hour": 20,
-      "plays": 11
-    },
-    {
-      "month": 5,
-      "day": 3,
-      "hour": 23,
+      "time_block": 5,
       "plays": 6
     },
     {
       "month": 5,
       "day": 4,
-      "hour": 9,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 5,
       "day": 4,
-      "hour": 14,
-      "plays": 6
+      "time_block": 3,
+      "plays": 35
     },
     {
       "month": 5,
       "day": 4,
-      "hour": 15,
-      "plays": 15
-    },
-    {
-      "month": 5,
-      "day": 4,
-      "hour": 16,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 4,
-      "hour": 17,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 4,
-      "hour": 18,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 4,
-      "hour": 19,
-      "plays": 15
+      "time_block": 4,
+      "plays": 43
     },
     {
       "month": 5,
       "day": 5,
-      "hour": 13,
+      "time_block": 3,
       "plays": 6
     },
     {
       "month": 5,
       "day": 6,
-      "hour": 10,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 5,
       "day": 6,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 6,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 7,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 7,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 10,
-      "hour": 9,
-      "plays": 10
-    },
-    {
-      "month": 5,
-      "day": 10,
-      "hour": 10,
-      "plays": 10
-    },
-    {
-      "month": 5,
-      "day": 11,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 13,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 14,
-      "hour": 15,
-      "plays": 12
-    },
-    {
-      "month": 5,
-      "day": 14,
-      "hour": 16,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 15,
-      "hour": 13,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 15,
-      "hour": 14,
-      "plays": 15
-    },
-    {
-      "month": 5,
-      "day": 15,
-      "hour": 17,
-      "plays": 7
-    },
-    {
-      "month": 5,
-      "day": 15,
-      "hour": 18,
-      "plays": 8
-    },
-    {
-      "month": 5,
-      "day": 16,
-      "hour": 17,
-      "plays": 10
-    },
-    {
-      "month": 5,
-      "day": 17,
-      "hour": 11,
-      "plays": 11
-    },
-    {
-      "month": 5,
-      "day": 17,
-      "hour": 12,
+      "time_block": 4,
       "plays": 4
     },
     {
       "month": 5,
-      "day": 17,
-      "hour": 13,
-      "plays": 11
-    },
-    {
-      "month": 5,
-      "day": 17,
-      "hour": 15,
-      "plays": 15
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 10,
-      "plays": 7
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 12,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 13,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 14,
-      "plays": 8
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 16,
-      "plays": 34
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 17,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 18,
-      "hour": 18,
+      "day": 7,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 5,
-      "day": 18,
-      "hour": 19,
+      "day": 7,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 5,
-      "day": 18,
-      "hour": 20,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 19,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 19,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 19,
-      "hour": 16,
-      "plays": 13
-    },
-    {
-      "month": 5,
-      "day": 20,
-      "hour": 11,
-      "plays": 14
-    },
-    {
-      "month": 5,
-      "day": 20,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 22,
-      "hour": 19,
-      "plays": 9
-    },
-    {
-      "month": 5,
-      "day": 22,
-      "hour": 20,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 11,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 12,
+      "day": 10,
+      "time_block": 2,
       "plays": 20
     },
     {
       "month": 5,
+      "day": 11,
+      "time_block": 3,
+      "plays": 2
+    },
+    {
+      "month": 5,
+      "day": 13,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 5,
+      "day": 14,
+      "time_block": 3,
+      "plays": 13
+    },
+    {
+      "month": 5,
+      "day": 15,
+      "time_block": 3,
+      "plays": 29
+    },
+    {
+      "month": 5,
+      "day": 15,
+      "time_block": 4,
+      "plays": 15
+    },
+    {
+      "month": 5,
+      "day": 16,
+      "time_block": 4,
+      "plays": 10
+    },
+    {
+      "month": 5,
+      "day": 17,
+      "time_block": 2,
+      "plays": 15
+    },
+    {
+      "month": 5,
+      "day": 17,
+      "time_block": 3,
+      "plays": 26
+    },
+    {
+      "month": 5,
+      "day": 18,
+      "time_block": 2,
+      "plays": 9
+    },
+    {
+      "month": 5,
+      "day": 18,
+      "time_block": 3,
+      "plays": 56
+    },
+    {
+      "month": 5,
+      "day": 18,
+      "time_block": 4,
+      "plays": 7
+    },
+    {
+      "month": 5,
+      "day": 19,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 5,
+      "day": 19,
+      "time_block": 3,
+      "plays": 15
+    },
+    {
+      "month": 5,
+      "day": 20,
+      "time_block": 2,
+      "plays": 14
+    },
+    {
+      "month": 5,
+      "day": 20,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 5,
+      "day": 22,
+      "time_block": 4,
+      "plays": 15
+    },
+    {
+      "month": 5,
       "day": 23,
-      "hour": 13,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 5,
+      "day": 23,
+      "time_block": 2,
+      "plays": 26
+    },
+    {
+      "month": 5,
+      "day": 23,
+      "time_block": 3,
+      "plays": 36
+    },
+    {
+      "month": 5,
+      "day": 23,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 5,
+      "day": 24,
+      "time_block": 2,
+      "plays": 24
+    },
+    {
+      "month": 5,
+      "day": 24,
+      "time_block": 3,
+      "plays": 9
+    },
+    {
+      "month": 5,
+      "day": 24,
+      "time_block": 4,
+      "plays": 6
+    },
+    {
+      "month": 5,
+      "day": 25,
+      "time_block": 1,
+      "plays": 7
+    },
+    {
+      "month": 5,
+      "day": 26,
+      "time_block": 3,
+      "plays": 6
+    },
+    {
+      "month": 5,
+      "day": 26,
+      "time_block": 4,
+      "plays": 13
+    },
+    {
+      "month": 5,
+      "day": 27,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 5,
+      "day": 27,
+      "time_block": 4,
+      "plays": 14
+    },
+    {
+      "month": 5,
+      "day": 28,
+      "time_block": 1,
+      "plays": 3
+    },
+    {
+      "month": 5,
+      "day": 28,
+      "time_block": 2,
+      "plays": 9
+    },
+    {
+      "month": 5,
+      "day": 28,
+      "time_block": 3,
+      "plays": 3
+    },
+    {
+      "month": 5,
+      "day": 28,
+      "time_block": 4,
+      "plays": 5
+    },
+    {
+      "month": 5,
+      "day": 29,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 5,
+      "day": 29,
+      "time_block": 4,
+      "plays": 5
+    },
+    {
+      "month": 5,
+      "day": 30,
+      "time_block": 1,
+      "plays": 10
+    },
+    {
+      "month": 5,
+      "day": 30,
+      "time_block": 3,
+      "plays": 18
+    },
+    {
+      "month": 5,
+      "day": 30,
+      "time_block": 4,
+      "plays": 6
+    },
+    {
+      "month": 6,
+      "day": 1,
+      "time_block": 2,
+      "plays": 18
+    },
+    {
+      "month": 6,
+      "day": 1,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 2,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 2,
+      "time_block": 2,
+      "plays": 7
+    },
+    {
+      "month": 6,
+      "day": 2,
+      "time_block": 3,
+      "plays": 17
+    },
+    {
+      "month": 6,
+      "day": 2,
+      "time_block": 4,
+      "plays": 13
+    },
+    {
+      "month": 6,
+      "day": 4,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 5,
+      "time_block": 1,
+      "plays": 7
+    },
+    {
+      "month": 6,
+      "day": 5,
+      "time_block": 3,
+      "plays": 16
+    },
+    {
+      "month": 6,
+      "day": 5,
+      "time_block": 4,
+      "plays": 15
+    },
+    {
+      "month": 6,
+      "day": 5,
+      "time_block": 5,
+      "plays": 11
+    },
+    {
+      "month": 6,
+      "day": 6,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 6,
+      "time_block": 2,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 6,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 6,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 7,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 7,
+      "time_block": 2,
+      "plays": 18
+    },
+    {
+      "month": 6,
+      "day": 8,
+      "time_block": 1,
+      "plays": 14
+    },
+    {
+      "month": 6,
+      "day": 8,
+      "time_block": 2,
+      "plays": 14
+    },
+    {
+      "month": 6,
+      "day": 9,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 9,
+      "time_block": 2,
+      "plays": 29
+    },
+    {
+      "month": 6,
+      "day": 10,
+      "time_block": 1,
+      "plays": 6
+    },
+    {
+      "month": 6,
+      "day": 10,
+      "time_block": 2,
+      "plays": 5
+    },
+    {
+      "month": 6,
+      "day": 11,
+      "time_block": 1,
+      "plays": 17
+    },
+    {
+      "month": 6,
+      "day": 11,
+      "time_block": 2,
+      "plays": 14
+    },
+    {
+      "month": 6,
+      "day": 11,
+      "time_block": 3,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 12,
+      "time_block": 1,
+      "plays": 10
+    },
+    {
+      "month": 6,
+      "day": 12,
+      "time_block": 2,
+      "plays": 30
+    },
+    {
+      "month": 6,
+      "day": 13,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 6,
+      "day": 13,
+      "time_block": 2,
+      "plays": 11
+    },
+    {
+      "month": 6,
+      "day": 14,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 6,
+      "day": 14,
+      "time_block": 2,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 14,
+      "time_block": 3,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 14,
+      "time_block": 4,
+      "plays": 11
+    },
+    {
+      "month": 6,
+      "day": 15,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 16,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 16,
+      "time_block": 3,
+      "plays": 44
+    },
+    {
+      "month": 6,
+      "day": 16,
+      "time_block": 4,
+      "plays": 6
+    },
+    {
+      "month": 6,
+      "day": 16,
+      "time_block": 5,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 17,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 17,
+      "time_block": 2,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 18,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 18,
+      "time_block": 4,
+      "plays": 16
+    },
+    {
+      "month": 6,
+      "day": 19,
+      "time_block": 1,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 20,
+      "time_block": 2,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 20,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 22,
+      "time_block": 1,
+      "plays": 11
+    },
+    {
+      "month": 6,
+      "day": 22,
+      "time_block": 3,
+      "plays": 24
+    },
+    {
+      "month": 6,
+      "day": 22,
+      "time_block": 4,
+      "plays": 23
+    },
+    {
+      "month": 6,
+      "day": 23,
+      "time_block": 1,
+      "plays": 6
+    },
+    {
+      "month": 6,
+      "day": 24,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 24,
+      "time_block": 4,
+      "plays": 7
+    },
+    {
+      "month": 6,
+      "day": 25,
+      "time_block": 1,
+      "plays": 7
+    },
+    {
+      "month": 6,
+      "day": 25,
+      "time_block": 2,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 25,
+      "time_block": 4,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 26,
+      "time_block": 1,
+      "plays": 9
+    },
+    {
+      "month": 6,
+      "day": 26,
+      "time_block": 2,
+      "plays": 6
+    },
+    {
+      "month": 6,
+      "day": 26,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 6,
+      "day": 28,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 6,
+      "day": 28,
+      "time_block": 3,
+      "plays": 3
+    },
+    {
+      "month": 6,
+      "day": 28,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 6,
+      "day": 30,
+      "time_block": 4,
+      "plays": 15
+    },
+    {
+      "month": 7,
+      "day": 1,
+      "time_block": 3,
+      "plays": 16
+    },
+    {
+      "month": 7,
+      "day": 1,
+      "time_block": 4,
+      "plays": 22
+    },
+    {
+      "month": 7,
+      "day": 2,
+      "time_block": 3,
+      "plays": 12
+    },
+    {
+      "month": 7,
+      "day": 2,
+      "time_block": 4,
+      "plays": 18
+    },
+    {
+      "month": 7,
+      "day": 3,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 3,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 3,
+      "time_block": 4,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 4,
+      "time_block": 2,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 4,
+      "time_block": 3,
+      "plays": 4
+    },
+    {
+      "month": 7,
+      "day": 5,
+      "time_block": 2,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 5,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 6,
+      "time_block": 2,
+      "plays": 12
+    },
+    {
+      "month": 7,
+      "day": 6,
+      "time_block": 3,
+      "plays": 4
+    },
+    {
+      "month": 7,
+      "day": 7,
+      "time_block": 1,
+      "plays": 7
+    },
+    {
+      "month": 7,
+      "day": 7,
+      "time_block": 4,
+      "plays": 16
+    },
+    {
+      "month": 7,
+      "day": 8,
+      "time_block": 1,
+      "plays": 8
+    },
+    {
+      "month": 7,
+      "day": 8,
+      "time_block": 3,
+      "plays": 9
+    },
+    {
+      "month": 7,
+      "day": 8,
+      "time_block": 4,
+      "plays": 16
+    },
+    {
+      "month": 7,
+      "day": 9,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 9,
+      "time_block": 2,
+      "plays": 8
+    },
+    {
+      "month": 7,
+      "day": 10,
+      "time_block": 2,
+      "plays": 8
+    },
+    {
+      "month": 7,
+      "day": 10,
+      "time_block": 3,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 10,
+      "time_block": 4,
+      "plays": 6
+    },
+    {
+      "month": 7,
+      "day": 11,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 12,
+      "time_block": 2,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 13,
+      "time_block": 1,
+      "plays": 6
+    },
+    {
+      "month": 7,
+      "day": 13,
+      "time_block": 2,
+      "plays": 9
+    },
+    {
+      "month": 7,
+      "day": 13,
+      "time_block": 4,
+      "plays": 8
+    },
+    {
+      "month": 7,
+      "day": 14,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 15,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 7,
+      "day": 15,
+      "time_block": 4,
+      "plays": 3
+    },
+    {
+      "month": 7,
+      "day": 16,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 16,
+      "time_block": 3,
+      "plays": 8
+    },
+    {
+      "month": 7,
+      "day": 16,
+      "time_block": 4,
+      "plays": 16
+    },
+    {
+      "month": 7,
+      "day": 17,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 17,
+      "time_block": 4,
+      "plays": 4
+    },
+    {
+      "month": 7,
+      "day": 18,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 18,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 18,
+      "time_block": 5,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 19,
+      "time_block": 2,
+      "plays": 6
+    },
+    {
+      "month": 7,
+      "day": 19,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 23,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 23,
+      "time_block": 3,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 24,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 24,
+      "time_block": 2,
+      "plays": 10
+    },
+    {
+      "month": 7,
+      "day": 25,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 7,
+      "day": 27,
+      "time_block": 1,
+      "plays": 17
+    },
+    {
+      "month": 7,
+      "day": 27,
+      "time_block": 2,
+      "plays": 17
+    },
+    {
+      "month": 7,
+      "day": 27,
+      "time_block": 3,
+      "plays": 10
+    },
+    {
+      "month": 7,
+      "day": 27,
+      "time_block": 4,
+      "plays": 31
+    },
+    {
+      "month": 7,
+      "day": 27,
+      "time_block": 5,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 28,
+      "time_block": 1,
+      "plays": 5
+    },
+    {
+      "month": 7,
+      "day": 28,
+      "time_block": 3,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 28,
+      "time_block": 4,
+      "plays": 9
+    },
+    {
+      "month": 7,
+      "day": 29,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 30,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 7,
+      "day": 31,
+      "time_block": 1,
+      "plays": 9
+    },
+    {
+      "month": 7,
+      "day": 31,
+      "time_block": 2,
+      "plays": 12
+    },
+    {
+      "month": 7,
+      "day": 31,
+      "time_block": 3,
+      "plays": 14
+    },
+    {
+      "month": 7,
+      "day": 31,
+      "time_block": 5,
+      "plays": 9
+    },
+    {
+      "month": 8,
+      "day": 2,
+      "time_block": 0,
+      "plays": 1
+    },
+    {
+      "month": 8,
+      "day": 10,
+      "time_block": 1,
+      "plays": 11
+    },
+    {
+      "month": 8,
+      "day": 11,
+      "time_block": 3,
+      "plays": 1
+    },
+    {
+      "month": 8,
+      "day": 16,
+      "time_block": 4,
+      "plays": 13
+    },
+    {
+      "month": 8,
+      "day": 17,
+      "time_block": 2,
+      "plays": 1
+    },
+    {
+      "month": 8,
+      "day": 17,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 8,
+      "day": 18,
+      "time_block": 2,
+      "plays": 3
+    },
+    {
+      "month": 8,
+      "day": 19,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 8,
+      "day": 19,
+      "time_block": 3,
       "plays": 19
     },
     {
-      "month": 5,
-      "day": 23,
-      "hour": 14,
-      "plays": 13
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 16,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 23,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 24,
-      "hour": 11,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 24,
-      "hour": 12,
-      "plays": 18
-    },
-    {
-      "month": 5,
-      "day": 24,
-      "hour": 13,
-      "plays": 9
-    },
-    {
-      "month": 5,
-      "day": 24,
-      "hour": 19,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 25,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 25,
-      "hour": 8,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 26,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 5,
-      "day": 26,
-      "hour": 16,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 26,
-      "hour": 17,
-      "plays": 13
-    },
-    {
-      "month": 5,
-      "day": 27,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 5,
-      "day": 27,
-      "hour": 18,
-      "plays": 7
-    },
-    {
-      "month": 5,
-      "day": 27,
-      "hour": 19,
-      "plays": 7
-    },
-    {
-      "month": 5,
-      "day": 28,
-      "hour": 8,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 28,
-      "hour": 9,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 28,
-      "hour": 10,
-      "plays": 5
-    },
-    {
-      "month": 5,
-      "day": 28,
-      "hour": 16,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 28,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 5,
-      "day": 29,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 29,
-      "hour": 19,
-      "plays": 5
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 6,
-      "plays": 6
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 15,
-      "plays": 3
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 16,
-      "plays": 15
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 5,
-      "day": 30,
-      "hour": 20,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 1,
-      "hour": 10,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 1,
-      "hour": 11,
-      "plays": 8
-    },
-    {
-      "month": 6,
-      "day": 1,
-      "hour": 12,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 1,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 11,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 12,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 13,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 14,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 16,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 18,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 2,
-      "hour": 19,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 4,
-      "hour": 6,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 5,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 6,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 14,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 16,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 19,
-      "plays": 11
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 20,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 21,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 5,
-      "hour": 22,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 6,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 7,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 9,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 10,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 13,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 6,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 7,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 7,
-      "hour": 10,
-      "plays": 10
-    },
-    {
-      "month": 6,
-      "day": 7,
-      "hour": 11,
-      "plays": 8
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 7,
-      "plays": 8
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 8,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 10,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 11,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 8,
-      "hour": 12,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 5,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 6,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 9,
-      "plays": 13
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 10,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 11,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 9,
-      "hour": 12,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 10,
-      "hour": 7,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 10,
-      "hour": 12,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 6,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 7,
-      "plays": 10
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 8,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 9,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 10,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 11,
-      "hour": 14,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 12,
-      "hour": 5,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 12,
-      "hour": 6,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 12,
-      "hour": 10,
-      "plays": 12
-    },
-    {
-      "month": 6,
-      "day": 12,
-      "hour": 11,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 12,
-      "hour": 12,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 13,
-      "hour": 6,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 13,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 13,
-      "hour": 8,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 13,
-      "hour": 10,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 13,
-      "hour": 11,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 14,
-      "hour": 8,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 14,
-      "hour": 12,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 14,
-      "hour": 16,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 14,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 14,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 15,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 15,
-      "hour": 20,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 13,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 14,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 15,
-      "plays": 14
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 16,
-      "plays": 14
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 20,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 16,
-      "hour": 21,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 17,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 17,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 18,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 18,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 18,
-      "hour": 19,
-      "plays": 14
-    },
-    {
-      "month": 6,
-      "day": 19,
-      "hour": 7,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 20,
-      "hour": 10,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 20,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 8,
-      "plays": 11
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 14,
-      "plays": 13
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 15,
-      "plays": 8
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 16,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 17,
-      "plays": 9
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 22,
-      "hour": 20,
-      "plays": 12
-    },
-    {
-      "month": 6,
-      "day": 23,
-      "hour": 6,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 23,
-      "hour": 7,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 24,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 24,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 6,
-      "day": 24,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 25,
-      "hour": 6,
-      "plays": 7
-    },
-    {
-      "month": 6,
-      "day": 25,
-      "hour": 12,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 25,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 26,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 26,
-      "hour": 8,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 26,
-      "hour": 9,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 26,
-      "hour": 11,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 26,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 6,
-      "day": 28,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 6,
-      "day": 28,
-      "hour": 13,
-      "plays": 3
-    },
-    {
-      "month": 6,
-      "day": 28,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 6,
-      "day": 30,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 6,
-      "day": 30,
-      "hour": 19,
-      "plays": 10
-    },
-    {
-      "month": 7,
-      "day": 1,
-      "hour": 16,
-      "plays": 16
-    },
-    {
-      "month": 7,
-      "day": 1,
-      "hour": 17,
-      "plays": 17
-    },
-    {
-      "month": 7,
-      "day": 1,
-      "hour": 19,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 2,
-      "hour": 14,
-      "plays": 11
-    },
-    {
-      "month": 7,
-      "day": 2,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 2,
-      "hour": 19,
-      "plays": 7
-    },
-    {
-      "month": 7,
-      "day": 2,
-      "hour": 20,
-      "plays": 11
-    },
-    {
-      "month": 7,
-      "day": 3,
-      "hour": 6,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 3,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 3,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 3,
-      "hour": 18,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 4,
-      "hour": 10,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 4,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 5,
-      "hour": 12,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 5,
-      "hour": 20,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 6,
-      "hour": 9,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 6,
-      "hour": 10,
-      "plays": 9
-    },
-    {
-      "month": 7,
-      "day": 6,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 7,
-      "hour": 7,
-      "plays": 7
-    },
-    {
-      "month": 7,
-      "day": 7,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 7,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 7,
-      "hour": 19,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 7,
-      "hour": 20,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 6,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 14,
-      "plays": 9
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 17,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 19,
-      "plays": 7
-    },
-    {
-      "month": 7,
-      "day": 8,
-      "hour": 20,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 9,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 9,
-      "hour": 10,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 9,
-      "hour": 11,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 10,
-      "hour": 11,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 10,
-      "hour": 16,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 10,
-      "hour": 17,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 11,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 12,
-      "hour": 10,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 13,
-      "hour": 8,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 13,
-      "hour": 9,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 13,
-      "hour": 12,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 13,
-      "hour": 17,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 13,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 14,
-      "hour": 16,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 15,
-      "hour": 6,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 15,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 16,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 16,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 16,
-      "hour": 15,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 16,
-      "hour": 17,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 16,
-      "hour": 20,
-      "plays": 11
-    },
-    {
-      "month": 7,
-      "day": 17,
-      "hour": 5,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 17,
-      "hour": 7,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 17,
-      "hour": 19,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 18,
-      "hour": 7,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 18,
-      "hour": 8,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 18,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 18,
-      "hour": 23,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 19,
-      "hour": 10,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 19,
-      "hour": 13,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 23,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 23,
-      "hour": 14,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 24,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 24,
-      "hour": 9,
-      "plays": 10
-    },
-    {
-      "month": 7,
-      "day": 25,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 8,
-      "plays": 17
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 11,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 12,
-      "plays": 11
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 16,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 17,
-      "plays": 15
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 18,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 19,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 27,
-      "hour": 22,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 28,
-      "hour": 7,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 28,
-      "hour": 14,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 28,
-      "hour": 17,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 28,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 29,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 30,
-      "hour": 6,
-      "plays": 2
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 6,
-      "plays": 3
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 7,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 9,
-      "plays": 5
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 10,
-      "plays": 7
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 15,
-      "plays": 6
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 16,
-      "plays": 8
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 21,
-      "plays": 4
-    },
-    {
-      "month": 7,
-      "day": 31,
-      "hour": 22,
-      "plays": 5
-    },
-    {
-      "month": 8,
-      "day": 2,
-      "hour": 4,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 10,
-      "hour": 8,
-      "plays": 11
-    },
-    {
-      "month": 8,
-      "day": 11,
-      "hour": 13,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 16,
-      "hour": 18,
-      "plays": 13
-    },
-    {
-      "month": 8,
-      "day": 17,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 17,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 18,
-      "hour": 11,
-      "plays": 3
-    },
-    {
-      "month": 8,
-      "day": 19,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 19,
-      "hour": 13,
-      "plays": 13
-    },
-    {
-      "month": 8,
-      "day": 19,
-      "hour": 14,
-      "plays": 6
-    },
-    {
       "month": 8,
       "day": 20,
-      "hour": 21,
+      "time_block": 5,
       "plays": 7
     },
     {
       "month": 8,
       "day": 21,
-      "hour": 7,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 8,
       "day": 21,
-      "hour": 20,
+      "time_block": 4,
       "plays": 5
     },
     {
       "month": 8,
       "day": 21,
-      "hour": 21,
+      "time_block": 5,
       "plays": 3
     },
     {
       "month": 8,
       "day": 22,
-      "hour": 6,
-      "plays": 2
+      "time_block": 1,
+      "plays": 3
     },
     {
       "month": 8,
       "day": 22,
-      "hour": 7,
-      "plays": 1
+      "time_block": 3,
+      "plays": 38
     },
     {
       "month": 8,
       "day": 22,
-      "hour": 14,
-      "plays": 8
-    },
-    {
-      "month": 8,
-      "day": 22,
-      "hour": 15,
-      "plays": 14
-    },
-    {
-      "month": 8,
-      "day": 22,
-      "hour": 16,
-      "plays": 16
-    },
-    {
-      "month": 8,
-      "day": 22,
-      "hour": 17,
+      "time_block": 4,
       "plays": 8
     },
     {
       "month": 8,
       "day": 23,
-      "hour": 8,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 8,
       "day": 23,
-      "hour": 9,
+      "time_block": 2,
       "plays": 10
     },
     {
       "month": 8,
       "day": 24,
-      "hour": 6,
-      "plays": 1
-    },
-    {
-      "month": 8,
-      "day": 24,
-      "hour": 7,
-      "plays": 8
+      "time_block": 1,
+      "plays": 9
     },
     {
       "month": 8,
       "day": 26,
-      "hour": 4,
+      "time_block": 0,
       "plays": 1
     },
     {
       "month": 8,
       "day": 27,
-      "hour": 6,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 8,
       "day": 28,
-      "hour": 16,
+      "time_block": 3,
       "plays": 9
     },
     {
       "month": 8,
       "day": 28,
-      "hour": 21,
+      "time_block": 5,
       "plays": 11
     },
     {
       "month": 8,
       "day": 29,
-      "hour": 7,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 8,
       "day": 29,
-      "hour": 11,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 8,
       "day": 30,
-      "hour": 8,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 8,
       "day": 30,
-      "hour": 16,
+      "time_block": 3,
       "plays": 4
     },
     {
       "month": 8,
       "day": 30,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 8,
-      "day": 30,
-      "hour": 19,
-      "plays": 7
-    },
-    {
-      "month": 8,
-      "day": 30,
-      "hour": 20,
-      "plays": 6
+      "time_block": 4,
+      "plays": 19
     },
     {
       "month": 9,
       "day": 1,
-      "hour": 13,
+      "time_block": 3,
       "plays": 5
     },
     {
       "month": 9,
       "day": 2,
-      "hour": 10,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 9,
       "day": 2,
-      "hour": 18,
-      "plays": 8
-    },
-    {
-      "month": 9,
-      "day": 2,
-      "hour": 19,
-      "plays": 1
+      "time_block": 4,
+      "plays": 9
     },
     {
       "month": 9,
       "day": 3,
-      "hour": 7,
+      "time_block": 1,
       "plays": 4
     },
     {
       "month": 9,
       "day": 3,
-      "hour": 16,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 9,
       "day": 4,
-      "hour": 5,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 4,
-      "hour": 8,
-      "plays": 1
+      "time_block": 1,
+      "plays": 2
     },
     {
       "month": 9,
       "day": 6,
-      "hour": 6,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 9,
       "day": 7,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 9,
       "day": 7,
-      "hour": 12,
+      "time_block": 2,
       "plays": 8
     },
     {
       "month": 9,
       "day": 7,
-      "hour": 13,
-      "plays": 1
+      "time_block": 3,
+      "plays": 3
     },
     {
       "month": 9,
       "day": 7,
-      "hour": 14,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 7,
-      "hour": 22,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 9,
       "day": 8,
-      "hour": 8,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 9,
       "day": 9,
-      "hour": 6,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 9,
       "day": 9,
-      "hour": 13,
+      "time_block": 3,
       "plays": 2
     },
     {
       "month": 9,
       "day": 9,
-      "hour": 17,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 9,
       "day": 10,
-      "hour": 10,
+      "time_block": 2,
       "plays": 4
     },
     {
       "month": 9,
       "day": 12,
-      "hour": 7,
-      "plays": 1
+      "time_block": 1,
+      "plays": 4
     },
     {
       "month": 9,
       "day": 12,
-      "hour": 8,
-      "plays": 3
-    },
-    {
-      "month": 9,
-      "day": 12,
-      "hour": 19,
+      "time_block": 4,
       "plays": 9
     },
     {
       "month": 9,
       "day": 13,
-      "hour": 8,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 9,
       "day": 13,
-      "hour": 10,
-      "plays": 1
+      "time_block": 2,
+      "plays": 25
     },
     {
       "month": 9,
       "day": 13,
-      "hour": 11,
-      "plays": 9
+      "time_block": 3,
+      "plays": 14
     },
     {
       "month": 9,
       "day": 13,
-      "hour": 12,
-      "plays": 15
-    },
-    {
-      "month": 9,
-      "day": 13,
-      "hour": 13,
-      "plays": 13
-    },
-    {
-      "month": 9,
-      "day": 13,
-      "hour": 16,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 13,
-      "hour": 17,
+      "time_block": 4,
       "plays": 7
     },
     {
       "month": 9,
       "day": 14,
-      "hour": 17,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 9,
       "day": 15,
-      "hour": 16,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 9,
       "day": 16,
-      "hour": 10,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 9,
       "day": 16,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 16,
-      "hour": 19,
-      "plays": 2
+      "time_block": 4,
+      "plays": 4
     },
     {
       "month": 9,
       "day": 18,
-      "hour": 21,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 9,
       "day": 20,
-      "hour": 10,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 9,
       "day": 20,
-      "hour": 14,
+      "time_block": 3,
       "plays": 12
     },
     {
       "month": 9,
       "day": 21,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 9,
       "day": 22,
-      "hour": 10,
-      "plays": 9
+      "time_block": 2,
+      "plays": 25
     },
     {
       "month": 9,
-      "day": 22,
-      "hour": 11,
-      "plays": 15
-    },
-    {
-      "month": 9,
-      "day": 22,
-      "hour": 12,
+      "day": 24,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 9,
       "day": 24,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 24,
-      "hour": 9,
+      "time_block": 2,
       "plays": 6
     },
     {
       "month": 9,
       "day": 24,
-      "hour": 14,
-      "plays": 14
-    },
-    {
-      "month": 9,
-      "day": 24,
-      "hour": 15,
-      "plays": 4
-    },
-    {
-      "month": 9,
-      "day": 24,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 25,
-      "hour": 12,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 25,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 25,
-      "hour": 20,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 26,
-      "hour": 6,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 26,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 27,
-      "hour": 9,
-      "plays": 10
-    },
-    {
-      "month": 9,
-      "day": 27,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 27,
-      "hour": 12,
-      "plays": 14
-    },
-    {
-      "month": 9,
-      "day": 27,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 27,
-      "hour": 18,
-      "plays": 14
-    },
-    {
-      "month": 9,
-      "day": 28,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 28,
-      "hour": 14,
-      "plays": 2
-    },
-    {
-      "month": 9,
-      "day": 29,
-      "hour": 11,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 29,
-      "hour": 12,
+      "time_block": 3,
       "plays": 18
     },
     {
       "month": 9,
+      "day": 24,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 9,
+      "day": 25,
+      "time_block": 2,
+      "plays": 1
+    },
+    {
+      "month": 9,
+      "day": 25,
+      "time_block": 4,
+      "plays": 4
+    },
+    {
+      "month": 9,
+      "day": 26,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 9,
+      "day": 26,
+      "time_block": 2,
+      "plays": 2
+    },
+    {
+      "month": 9,
+      "day": 27,
+      "time_block": 2,
+      "plays": 25
+    },
+    {
+      "month": 9,
+      "day": 27,
+      "time_block": 4,
+      "plays": 16
+    },
+    {
+      "month": 9,
+      "day": 28,
+      "time_block": 2,
+      "plays": 2
+    },
+    {
+      "month": 9,
+      "day": 28,
+      "time_block": 3,
+      "plays": 2
+    },
+    {
+      "month": 9,
       "day": 29,
-      "hour": 13,
+      "time_block": 2,
+      "plays": 19
+    },
+    {
+      "month": 9,
+      "day": 29,
+      "time_block": 3,
       "plays": 5
     },
     {
       "month": 9,
       "day": 29,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 9,
-      "day": 29,
-      "hour": 19,
-      "plays": 1
+      "time_block": 4,
+      "plays": 2
     },
     {
       "month": 9,
       "day": 30,
-      "hour": 18,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 10,
       "day": 1,
-      "hour": 16,
+      "time_block": 3,
       "plays": 6
     },
     {
       "month": 10,
       "day": 1,
-      "hour": 17,
-      "plays": 10
-    },
-    {
-      "month": 10,
-      "day": 1,
-      "hour": 18,
-      "plays": 13
+      "time_block": 4,
+      "plays": 23
     },
     {
       "month": 10,
       "day": 2,
-      "hour": 13,
-      "plays": 1
+      "time_block": 3,
+      "plays": 9
     },
     {
       "month": 10,
       "day": 2,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 2,
-      "hour": 16,
-      "plays": 7
-    },
-    {
-      "month": 10,
-      "day": 2,
-      "hour": 18,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 3,
-      "hour": 7,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 10,
       "day": 3,
-      "hour": 16,
+      "time_block": 3,
       "plays": 11
     },
     {
       "month": 10,
       "day": 3,
-      "hour": 19,
+      "time_block": 4,
       "plays": 10
     },
     {
       "month": 10,
       "day": 4,
-      "hour": 9,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 10,
       "day": 4,
-      "hour": 18,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 5,
-      "hour": 11,
-      "plays": 2
-    },
-    {
-      "month": 10,
-      "day": 5,
-      "hour": 12,
-      "plays": 4
+      "time_block": 2,
+      "plays": 6
     },
     {
       "month": 10,
       "day": 6,
-      "hour": 7,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 10,
       "day": 6,
-      "hour": 10,
+      "time_block": 2,
       "plays": 12
     },
     {
       "month": 10,
       "day": 6,
-      "hour": 15,
-      "plays": 1
+      "time_block": 3,
+      "plays": 23
     },
     {
       "month": 10,
       "day": 6,
-      "hour": 16,
+      "time_block": 4,
+      "plays": 2
+    },
+    {
+      "month": 10,
+      "day": 7,
+      "time_block": 1,
+      "plays": 4
+    },
+    {
+      "month": 10,
+      "day": 7,
+      "time_block": 4,
+      "plays": 3
+    },
+    {
+      "month": 10,
+      "day": 7,
+      "time_block": 5,
+      "plays": 5
+    },
+    {
+      "month": 10,
+      "day": 8,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 10,
+      "day": 8,
+      "time_block": 2,
+      "plays": 4
+    },
+    {
+      "month": 10,
+      "day": 9,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 10,
+      "day": 9,
+      "time_block": 2,
+      "plays": 3
+    },
+    {
+      "month": 10,
+      "day": 9,
+      "time_block": 3,
+      "plays": 13
+    },
+    {
+      "month": 10,
+      "day": 9,
+      "time_block": 4,
+      "plays": 3
+    },
+    {
+      "month": 10,
+      "day": 10,
+      "time_block": 0,
       "plays": 22
     },
     {
       "month": 10,
-      "day": 6,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 10,
-      "day": 7,
-      "hour": 7,
-      "plays": 4
-    },
-    {
-      "month": 10,
-      "day": 7,
-      "hour": 20,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 7,
-      "hour": 21,
-      "plays": 5
-    },
-    {
-      "month": 10,
-      "day": 8,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 8,
-      "hour": 9,
-      "plays": 4
-    },
-    {
-      "month": 10,
-      "day": 9,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 10,
-      "day": 9,
-      "hour": 11,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 9,
-      "hour": 16,
-      "plays": 13
-    },
-    {
-      "month": 10,
-      "day": 9,
-      "hour": 17,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 10,
-      "hour": 2,
-      "plays": 13
-    },
-    {
-      "month": 10,
-      "day": 10,
-      "hour": 3,
-      "plays": 9
-    },
-    {
-      "month": 10,
       "day": 11,
-      "hour": 17,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 14,
-      "hour": 7,
-      "plays": 6
+      "time_block": 1,
+      "plays": 13
     },
     {
       "month": 10,
       "day": 14,
-      "hour": 8,
-      "plays": 7
-    },
-    {
-      "month": 10,
-      "day": 14,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 14,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 14,
-      "hour": 16,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 14,
-      "hour": 19,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 15,
-      "hour": 16,
-      "plays": 7
-    },
-    {
-      "month": 10,
-      "day": 15,
-      "hour": 17,
+      "time_block": 3,
       "plays": 5
     },
     {
       "month": 10,
-      "day": 15,
-      "hour": 18,
-      "plays": 3
+      "day": 14,
+      "time_block": 4,
+      "plays": 1
     },
     {
       "month": 10,
       "day": 15,
-      "hour": 20,
-      "plays": 10
+      "time_block": 3,
+      "plays": 7
+    },
+    {
+      "month": 10,
+      "day": 15,
+      "time_block": 4,
+      "plays": 18
     },
     {
       "month": 10,
       "day": 16,
-      "hour": 13,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 10,
       "day": 18,
-      "hour": 7,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 10,
       "day": 18,
-      "hour": 15,
-      "plays": 4
+      "time_block": 3,
+      "plays": 7
     },
     {
       "month": 10,
       "day": 18,
-      "hour": 16,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 18,
-      "hour": 17,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 20,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 21,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 21,
-      "hour": 12,
-      "plays": 1
+      "time_block": 2,
+      "plays": 2
     },
     {
       "month": 10,
       "day": 22,
-      "hour": 11,
-      "plays": 3
+      "time_block": 2,
+      "plays": 8
     },
     {
       "month": 10,
       "day": 22,
-      "hour": 12,
-      "plays": 5
+      "time_block": 3,
+      "plays": 19
     },
     {
       "month": 10,
       "day": 22,
-      "hour": 13,
-      "plays": 6
-    },
-    {
-      "month": 10,
-      "day": 22,
-      "hour": 14,
-      "plays": 13
-    },
-    {
-      "month": 10,
-      "day": 22,
-      "hour": 18,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 10,
       "day": 24,
-      "hour": 14,
-      "plays": 7
-    },
-    {
-      "month": 10,
-      "day": 24,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 10,
-      "day": 24,
-      "hour": 19,
-      "plays": 12
-    },
-    {
-      "month": 10,
-      "day": 24,
-      "hour": 20,
+      "time_block": 3,
       "plays": 8
     },
     {
       "month": 10,
       "day": 24,
-      "hour": 21,
+      "time_block": 4,
+      "plays": 20
+    },
+    {
+      "month": 10,
+      "day": 24,
+      "time_block": 5,
       "plays": 11
     },
     {
       "month": 10,
       "day": 25,
-      "hour": 11,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 10,
       "day": 26,
-      "hour": 14,
-      "plays": 10
-    },
-    {
-      "month": 10,
-      "day": 26,
-      "hour": 15,
-      "plays": 10
+      "time_block": 3,
+      "plays": 20
     },
     {
       "month": 10,
       "day": 27,
-      "hour": 6,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 10,
       "day": 28,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 10,
       "day": 28,
-      "hour": 9,
-      "plays": 3
+      "time_block": 2,
+      "plays": 12
     },
     {
       "month": 10,
       "day": 28,
-      "hour": 10,
-      "plays": 6
-    },
-    {
-      "month": 10,
-      "day": 28,
-      "hour": 12,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 28,
-      "hour": 13,
+      "time_block": 3,
       "plays": 4
     },
     {
       "month": 10,
       "day": 28,
-      "hour": 19,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 10,
       "day": 29,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 10,
       "day": 29,
-      "hour": 18,
+      "time_block": 4,
       "plays": 8
     },
     {
       "month": 10,
       "day": 30,
-      "hour": 6,
-      "plays": 3
+      "time_block": 1,
+      "plays": 5
     },
     {
       "month": 10,
       "day": 30,
-      "hour": 8,
-      "plays": 2
-    },
-    {
-      "month": 10,
-      "day": 30,
-      "hour": 17,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 10,
       "day": 30,
-      "hour": 21,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 10,
       "day": 31,
-      "hour": 17,
-      "plays": 3
-    },
-    {
-      "month": 10,
-      "day": 31,
-      "hour": 18,
-      "plays": 1
+      "time_block": 4,
+      "plays": 4
     },
     {
       "month": 11,
       "day": 1,
-      "hour": 9,
-      "plays": 9
+      "time_block": 2,
+      "plays": 16
     },
     {
       "month": 11,
       "day": 1,
-      "hour": 10,
-      "plays": 6
-    },
-    {
-      "month": 11,
-      "day": 1,
-      "hour": 11,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 1,
-      "hour": 15,
+      "time_block": 3,
       "plays": 3
     },
     {
       "month": 11,
       "day": 1,
-      "hour": 17,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 11,
       "day": 2,
-      "hour": 7,
-      "plays": 9
-    },
-    {
-      "month": 11,
-      "day": 2,
-      "hour": 8,
-      "plays": 1
+      "time_block": 1,
+      "plays": 10
     },
     {
       "month": 11,
       "day": 3,
-      "hour": 9,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 11,
       "day": 3,
-      "hour": 16,
+      "time_block": 3,
       "plays": 4
     },
     {
       "month": 11,
       "day": 3,
-      "hour": 17,
-      "plays": 3
-    },
-    {
-      "month": 11,
-      "day": 3,
-      "hour": 20,
-      "plays": 1
+      "time_block": 4,
+      "plays": 4
     },
     {
       "month": 11,
       "day": 4,
-      "hour": 7,
-      "plays": 2
+      "time_block": 1,
+      "plays": 7
     },
     {
       "month": 11,
       "day": 4,
-      "hour": 8,
-      "plays": 5
+      "time_block": 2,
+      "plays": 22
     },
     {
       "month": 11,
       "day": 4,
-      "hour": 9,
-      "plays": 9
-    },
-    {
-      "month": 11,
-      "day": 4,
-      "hour": 10,
-      "plays": 13
-    },
-    {
-      "month": 11,
-      "day": 4,
-      "hour": 13,
-      "plays": 20
-    },
-    {
-      "month": 11,
-      "day": 4,
-      "hour": 14,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 4,
-      "hour": 15,
-      "plays": 11
-    },
-    {
-      "month": 11,
-      "day": 4,
-      "hour": 16,
-      "plays": 13
+      "time_block": 3,
+      "plays": 49
     },
     {
       "month": 11,
       "day": 5,
-      "hour": 15,
+      "time_block": 3,
       "plays": 7
     },
     {
       "month": 11,
       "day": 5,
-      "hour": 18,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 5,
-      "hour": 19,
-      "plays": 3
+      "time_block": 4,
+      "plays": 5
     },
     {
       "month": 11,
       "day": 6,
-      "hour": 9,
-      "plays": 3
+      "time_block": 2,
+      "plays": 6
     },
     {
       "month": 11,
       "day": 6,
-      "hour": 10,
-      "plays": 3
-    },
-    {
-      "month": 11,
-      "day": 6,
-      "hour": 13,
+      "time_block": 3,
       "plays": 8
     },
     {
       "month": 11,
       "day": 6,
-      "hour": 18,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 11,
       "day": 8,
-      "hour": 7,
+      "time_block": 1,
       "plays": 7
     },
     {
       "month": 11,
       "day": 8,
-      "hour": 9,
-      "plays": 1
+      "time_block": 2,
+      "plays": 10
     },
     {
       "month": 11,
       "day": 8,
-      "hour": 10,
-      "plays": 7
+      "time_block": 3,
+      "plays": 22
     },
     {
       "month": 11,
       "day": 8,
-      "hour": 11,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 8,
-      "hour": 13,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 8,
-      "hour": 14,
-      "plays": 19
-    },
-    {
-      "month": 11,
-      "day": 8,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 8,
-      "hour": 18,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 11,
       "day": 9,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 9,
-      "hour": 10,
-      "plays": 7
-    },
-    {
-      "month": 11,
-      "day": 9,
-      "hour": 11,
-      "plays": 6
-    },
-    {
-      "month": 11,
-      "day": 9,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 9,
-      "hour": 20,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 14,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 14,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 14,
-      "hour": 12,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 14,
-      "hour": 13,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 14,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 5,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 6,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 7,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 8,
-      "plays": 7
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 9,
-      "plays": 7
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 13,
-      "plays": 7
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 15,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 16,
-      "plays": 19
-    },
-    {
-      "month": 11,
-      "day": 15,
-      "hour": 17,
+      "time_block": 2,
       "plays": 15
     },
     {
       "month": 11,
-      "day": 15,
-      "hour": 18,
-      "plays": 17
+      "day": 9,
+      "time_block": 3,
+      "plays": 1
     },
     {
       "month": 11,
-      "day": 15,
-      "hour": 19,
+      "day": 9,
+      "time_block": 4,
+      "plays": 1
+    },
+    {
+      "month": 11,
+      "day": 14,
+      "time_block": 1,
+      "plays": 2
+    },
+    {
+      "month": 11,
+      "day": 14,
+      "time_block": 2,
+      "plays": 5
+    },
+    {
+      "month": 11,
+      "day": 14,
+      "time_block": 3,
+      "plays": 5
+    },
+    {
+      "month": 11,
+      "day": 14,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 11,
       "day": 15,
-      "hour": 20,
-      "plays": 20
+      "time_block": 1,
+      "plays": 16
     },
     {
       "month": 11,
       "day": 15,
-      "hour": 21,
+      "time_block": 2,
+      "plays": 7
+    },
+    {
+      "month": 11,
+      "day": 15,
+      "time_block": 3,
+      "plays": 28
+    },
+    {
+      "month": 11,
+      "day": 15,
+      "time_block": 4,
+      "plays": 53
+    },
+    {
+      "month": 11,
+      "day": 15,
+      "time_block": 5,
       "plays": 17
     },
     {
       "month": 11,
       "day": 16,
-      "hour": 12,
+      "time_block": 2,
       "plays": 16
     },
     {
       "month": 11,
       "day": 16,
-      "hour": 16,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 11,
       "day": 18,
-      "hour": 12,
+      "time_block": 2,
       "plays": 5
     },
     {
       "month": 11,
       "day": 18,
-      "hour": 13,
-      "plays": 3
-    },
-    {
-      "month": 11,
-      "day": 18,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 18,
-      "hour": 16,
-      "plays": 3
+      "time_block": 3,
+      "plays": 7
     },
     {
       "month": 11,
       "day": 19,
-      "hour": 6,
-      "plays": 4
+      "time_block": 1,
+      "plays": 5
     },
     {
       "month": 11,
       "day": 19,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 19,
-      "hour": 17,
-      "plays": 4
-    },
-    {
-      "month": 11,
-      "day": 19,
-      "hour": 20,
-      "plays": 10
+      "time_block": 4,
+      "plays": 14
     },
     {
       "month": 11,
       "day": 20,
-      "hour": 11,
-      "plays": 1
+      "time_block": 2,
+      "plays": 3
     },
     {
       "month": 11,
       "day": 20,
-      "hour": 12,
+      "time_block": 3,
       "plays": 2
     },
     {
       "month": 11,
       "day": 20,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 20,
-      "hour": 16,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 20,
-      "hour": 17,
-      "plays": 6
-    },
-    {
-      "month": 11,
-      "day": 20,
-      "hour": 19,
-      "plays": 1
+      "time_block": 4,
+      "plays": 7
     },
     {
       "month": 11,
       "day": 21,
-      "hour": 9,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 11,
       "day": 21,
-      "hour": 16,
+      "time_block": 3,
       "plays": 3
     },
     {
       "month": 11,
       "day": 21,
-      "hour": 17,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 11,
       "day": 22,
-      "hour": 8,
+      "time_block": 1,
       "plays": 8
     },
     {
       "month": 11,
       "day": 22,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 11,
-      "day": 22,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 22,
-      "hour": 12,
-      "plays": 2
+      "time_block": 2,
+      "plays": 5
     },
     {
       "month": 11,
       "day": 23,
-      "hour": 16,
+      "time_block": 3,
       "plays": 13
     },
     {
       "month": 11,
       "day": 23,
-      "hour": 18,
-      "plays": 6
-    },
-    {
-      "month": 11,
-      "day": 23,
-      "hour": 20,
-      "plays": 1
+      "time_block": 4,
+      "plays": 7
     },
     {
       "month": 11,
       "day": 24,
-      "hour": 9,
+      "time_block": 2,
       "plays": 2
     },
     {
       "month": 11,
       "day": 26,
-      "hour": 10,
-      "plays": 4
+      "time_block": 2,
+      "plays": 11
     },
     {
       "month": 11,
       "day": 26,
-      "hour": 12,
-      "plays": 7
+      "time_block": 3,
+      "plays": 35
     },
     {
       "month": 11,
       "day": 26,
-      "hour": 13,
-      "plays": 8
-    },
-    {
-      "month": 11,
-      "day": 26,
-      "hour": 14,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 11,
       "day": 26,
-      "hour": 15,
+      "time_block": 5,
+      "plays": 2
+    },
+    {
+      "month": 11,
+      "day": 27,
+      "time_block": 2,
       "plays": 14
     },
     {
       "month": 11,
-      "day": 26,
-      "hour": 16,
-      "plays": 7
+      "day": 27,
+      "time_block": 5,
+      "plays": 1
     },
     {
       "month": 11,
-      "day": 26,
-      "hour": 17,
-      "plays": 6
+      "day": 29,
+      "time_block": 3,
+      "plays": 5
     },
     {
       "month": 11,
-      "day": 26,
-      "hour": 21,
+      "day": 29,
+      "time_block": 4,
       "plays": 2
     },
     {
       "month": 11,
-      "day": 27,
-      "hour": 9,
-      "plays": 3
-    },
-    {
-      "month": 11,
-      "day": 27,
-      "hour": 10,
-      "plays": 6
-    },
-    {
-      "month": 11,
-      "day": 27,
-      "hour": 11,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 27,
-      "hour": 23,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 29,
-      "hour": 16,
-      "plays": 5
-    },
-    {
-      "month": 11,
-      "day": 29,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 29,
-      "hour": 19,
-      "plays": 1
+      "day": 30,
+      "time_block": 1,
+      "plays": 8
     },
     {
       "month": 11,
       "day": 30,
-      "hour": 6,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 30,
-      "hour": 8,
+      "time_block": 2,
       "plays": 7
     },
     {
       "month": 11,
       "day": 30,
-      "hour": 9,
-      "plays": 6
+      "time_block": 4,
+      "plays": 12
     },
     {
-      "month": 11,
-      "day": 30,
-      "hour": 12,
-      "plays": 1
-    },
-    {
-      "month": 11,
-      "day": 30,
-      "hour": 17,
+      "month": 12,
+      "day": 1,
+      "time_block": 2,
       "plays": 9
-    },
-    {
-      "month": 11,
-      "day": 30,
-      "hour": 18,
-      "plays": 3
-    },
-    {
-      "month": 12,
-      "day": 1,
-      "hour": 9,
-      "plays": 2
-    },
-    {
-      "month": 12,
-      "day": 1,
-      "hour": 10,
-      "plays": 7
     },
     {
       "month": 12,
       "day": 3,
-      "hour": 8,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 12,
       "day": 4,
-      "hour": 6,
-      "plays": 39
+      "time_block": 1,
+      "plays": 44
     },
     {
       "month": 12,
       "day": 4,
-      "hour": 7,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 4,
-      "hour": 8,
-      "plays": 4
-    },
-    {
-      "month": 12,
-      "day": 4,
-      "hour": 11,
+      "time_block": 2,
       "plays": 5
     },
     {
       "month": 12,
       "day": 6,
-      "hour": 5,
-      "plays": 5
+      "time_block": 1,
+      "plays": 23
     },
     {
       "month": 12,
       "day": 6,
-      "hour": 6,
-      "plays": 7
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 7,
-      "plays": 11
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 9,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 12,
       "day": 6,
-      "hour": 13,
+      "time_block": 3,
+      "plays": 22
+    },
+    {
+      "month": 12,
+      "day": 6,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 12,
       "day": 6,
-      "hour": 14,
-      "plays": 5
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 15,
-      "plays": 11
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 19,
-      "plays": 5
-    },
-    {
-      "month": 12,
-      "day": 6,
-      "hour": 22,
+      "time_block": 5,
       "plays": 4
     },
     {
       "month": 12,
       "day": 7,
-      "hour": 6,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 12,
       "day": 7,
-      "hour": 16,
+      "time_block": 3,
       "plays": 11
     },
     {
       "month": 12,
       "day": 8,
-      "hour": 7,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 12,
       "day": 9,
-      "hour": 7,
-      "plays": 4
+      "time_block": 1,
+      "plays": 11
     },
     {
       "month": 12,
       "day": 9,
-      "hour": 8,
+      "time_block": 2,
       "plays": 7
     },
     {
       "month": 12,
       "day": 9,
-      "hour": 12,
-      "plays": 7
-    },
-    {
-      "month": 12,
-      "day": 9,
-      "hour": 13,
-      "plays": 18
-    },
-    {
-      "month": 12,
-      "day": 9,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 9,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 9,
-      "hour": 16,
-      "plays": 8
+      "time_block": 3,
+      "plays": 28
     },
     {
       "month": 12,
       "day": 10,
-      "hour": 9,
+      "time_block": 2,
       "plays": 4
     },
     {
       "month": 12,
       "day": 11,
-      "hour": 7,
+      "time_block": 1,
       "plays": 3
     },
     {
       "month": 12,
       "day": 11,
-      "hour": 14,
+      "time_block": 3,
       "plays": 4
     },
     {
       "month": 12,
       "day": 11,
-      "hour": 17,
-      "plays": 2
-    },
-    {
-      "month": 12,
-      "day": 11,
-      "hour": 19,
-      "plays": 4
-    },
-    {
-      "month": 12,
-      "day": 13,
-      "hour": 10,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 14,
-      "hour": 8,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 14,
-      "hour": 9,
+      "time_block": 4,
       "plays": 6
     },
     {
       "month": 12,
-      "day": 14,
-      "hour": 11,
+      "day": 13,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 12,
       "day": 14,
-      "hour": 17,
+      "time_block": 1,
+      "plays": 1
+    },
+    {
+      "month": 12,
+      "day": 14,
+      "time_block": 2,
+      "plays": 7
+    },
+    {
+      "month": 12,
+      "day": 14,
+      "time_block": 4,
       "plays": 10
     },
     {
       "month": 12,
       "day": 15,
-      "hour": 8,
+      "time_block": 1,
       "plays": 1
     },
     {
       "month": 12,
       "day": 15,
-      "hour": 14,
+      "time_block": 3,
       "plays": 12
     },
     {
       "month": 12,
       "day": 17,
-      "hour": 18,
-      "plays": 4
-    },
-    {
-      "month": 12,
-      "day": 17,
-      "hour": 19,
-      "plays": 1
+      "time_block": 4,
+      "plays": 5
     },
     {
       "month": 12,
       "day": 18,
-      "hour": 14,
+      "time_block": 3,
+      "plays": 20
+    },
+    {
+      "month": 12,
+      "day": 18,
+      "time_block": 4,
+      "plays": 6
+    },
+    {
+      "month": 12,
+      "day": 19,
+      "time_block": 1,
       "plays": 8
     },
     {
       "month": 12,
-      "day": 18,
-      "hour": 15,
-      "plays": 7
-    },
-    {
-      "month": 12,
-      "day": 18,
-      "hour": 16,
-      "plays": 5
-    },
-    {
-      "month": 12,
-      "day": 18,
-      "hour": 17,
-      "plays": 6
-    },
-    {
-      "month": 12,
       "day": 19,
-      "hour": 7,
-      "plays": 6
-    },
-    {
-      "month": 12,
-      "day": 19,
-      "hour": 8,
-      "plays": 2
-    },
-    {
-      "month": 12,
-      "day": 19,
-      "hour": 13,
-      "plays": 4
-    },
-    {
-      "month": 12,
-      "day": 19,
-      "hour": 14,
-      "plays": 5
-    },
-    {
-      "month": 12,
-      "day": 19,
-      "hour": 15,
-      "plays": 3
+      "time_block": 3,
+      "plays": 12
     },
     {
       "month": 12,
       "day": 20,
-      "hour": 19,
+      "time_block": 4,
       "plays": 1
     },
     {
       "month": 12,
       "day": 21,
-      "hour": 8,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 12,
       "day": 21,
-      "hour": 9,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 12,
       "day": 21,
-      "hour": 16,
+      "time_block": 3,
       "plays": 4
     },
     {
       "month": 12,
       "day": 21,
-      "hour": 17,
+      "time_block": 4,
       "plays": 7
     },
     {
       "month": 12,
       "day": 22,
-      "hour": 6,
+      "time_block": 1,
       "plays": 7
     },
     {
       "month": 12,
       "day": 22,
-      "hour": 21,
-      "plays": 8
-    },
-    {
-      "month": 12,
-      "day": 22,
-      "hour": 22,
-      "plays": 3
+      "time_block": 5,
+      "plays": 11
     },
     {
       "month": 12,
       "day": 23,
-      "hour": 7,
+      "time_block": 1,
       "plays": 2
     },
     {
       "month": 12,
       "day": 23,
-      "hour": 15,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 12,
       "day": 24,
-      "hour": 12,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 12,
       "day": 24,
-      "hour": 15,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 12,
       "day": 26,
-      "hour": 9,
+      "time_block": 2,
       "plays": 6
     },
     {
       "month": 12,
       "day": 26,
-      "hour": 14,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 26,
-      "hour": 15,
-      "plays": 1
+      "time_block": 3,
+      "plays": 2
     },
     {
       "month": 12,
       "day": 28,
-      "hour": 9,
+      "time_block": 2,
       "plays": 3
     },
     {
       "month": 12,
       "day": 28,
-      "hour": 14,
+      "time_block": 3,
       "plays": 1
     },
     {
       "month": 12,
       "day": 28,
-      "hour": 17,
-      "plays": 8
-    },
-    {
-      "month": 12,
-      "day": 28,
-      "hour": 20,
-      "plays": 1
+      "time_block": 4,
+      "plays": 9
     },
     {
       "month": 12,
       "day": 29,
-      "hour": 7,
+      "time_block": 1,
       "plays": 5
     },
     {
       "month": 12,
       "day": 29,
-      "hour": 17,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 29,
-      "hour": 18,
-      "plays": 1
+      "time_block": 4,
+      "plays": 2
     },
     {
       "month": 12,
       "day": 30,
-      "hour": 7,
+      "time_block": 1,
       "plays": 6
     },
     {
       "month": 12,
       "day": 30,
-      "hour": 9,
+      "time_block": 2,
       "plays": 1
     },
     {
       "month": 12,
       "day": 30,
-      "hour": 13,
+      "time_block": 3,
+      "plays": 10
+    },
+    {
+      "month": 12,
+      "day": 30,
+      "time_block": 4,
       "plays": 9
     },
     {
       "month": 12,
       "day": 30,
-      "hour": 15,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 30,
-      "hour": 18,
-      "plays": 1
-    },
-    {
-      "month": 12,
-      "day": 30,
-      "hour": 19,
-      "plays": 8
-    },
-    {
-      "month": 12,
-      "day": 30,
-      "hour": 21,
+      "time_block": 5,
       "plays": 1
     },
     {
       "month": 12,
       "day": 31,
-      "hour": 6,
+      "time_block": 1,
       "plays": 2
     }
   ],

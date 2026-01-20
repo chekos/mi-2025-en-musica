@@ -161,8 +161,33 @@ def calculate_weekday_hour_heatmap(data: list[dict]) -> list[dict]:
     ]
 
 
+def hour_to_time_block(hour: int) -> int:
+    """Mapea hora (0-23) a bloque de 4 horas (0-5).
+
+    Bloques:
+      0: 1am-5am   (horas 1,2,3,4)    - Madrugada
+      1: 5am-9am   (horas 5,6,7,8)    - Mañana
+      2: 9am-1pm   (horas 9,10,11,12) - Mediodía
+      3: 1pm-5pm   (horas 13,14,15,16)- Tarde
+      4: 5pm-9pm   (horas 17,18,19,20)- Noche
+      5: 9pm-1am   (horas 21,22,23,0) - Medianoche
+    """
+    if hour in (1, 2, 3, 4):
+        return 0
+    elif hour in (5, 6, 7, 8):
+        return 1
+    elif hour in (9, 10, 11, 12):
+        return 2
+    elif hour in (13, 14, 15, 16):
+        return 3
+    elif hour in (17, 18, 19, 20):
+        return 4
+    else:  # 21, 22, 23, 0
+        return 5
+
+
 def calculate_day_hour_heatmap(data: list[dict]) -> list[dict]:
-    """Heatmap facetado: día del mes (1-31) × hora (0-23) × mes."""
+    """Heatmap facetado: día del mes (1-31) × bloque de 4 horas (0-5) × mes."""
     heatmap = defaultdict(int)
 
     for item in data:
@@ -170,13 +195,13 @@ def calculate_day_hour_heatmap(data: list[dict]) -> list[dict]:
         if ts:
             dt_pacific = utc_to_pacific(ts)
             day = dt_pacific.day  # 1-31
-            hour = dt_pacific.hour
+            time_block = hour_to_time_block(dt_pacific.hour)
             month = dt_pacific.month
-            heatmap[(month, day, hour)] += 1
+            heatmap[(month, day, time_block)] += 1
 
     return [
-        {"month": month, "day": day, "hour": hour, "plays": plays}
-        for (month, day, hour), plays in heatmap.items()
+        {"month": month, "day": day, "time_block": time_block, "plays": plays}
+        for (month, day, time_block), plays in heatmap.items()
     ]
 
 
