@@ -335,33 +335,38 @@ footer {
   font-size: 0.75rem;
 }
 
-/* Substack CTA Banner */
+/* Substack CTA Banner - styled like section headers */
 .cta-banner {
-  border: 2px solid var(--border);
-  padding: 1rem 1.5rem;
+  background: var(--border);
+  color: var(--bg);
+  padding: 0.75rem 1rem;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background: var(--gray-100);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .cta-banner-text {
-  font-size: 0.85rem;
-  color: var(--text);
+  color: var(--bg);
 }
 
 .cta-banner-text strong {
   font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .cta-banner-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--text);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--text);
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 700;
@@ -373,7 +378,7 @@ footer {
 }
 
 .cta-banner-link:hover {
-  background: var(--gray-700);
+  background: var(--gray-200);
 }
 
 .cta-banner-link::after {
@@ -389,7 +394,6 @@ footer {
   .cta-banner-link {
     width: 100%;
     justify-content: center;
-    border: 2px solid var(--text);
     padding: 0.75rem 1rem;
   }
 }
